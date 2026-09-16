@@ -17,6 +17,7 @@ export default function HomeClient() {
 
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [selectedCompanies, setSelectedCompanies] = useState<string[]>([]);
   const [view, setView] = useState<"gallery" | "list">("gallery");
   const [hydrated, setHydrated] = useState(false);
 
@@ -24,6 +25,7 @@ export default function HomeClient() {
   useEffect(() => {
     setSelectedTypes(parseList(searchParams.get("type")));
     setSelectedCategories(parseList(searchParams.get("category")));
+    setSelectedCompanies(parseList(searchParams.get("company")));
     const v = searchParams.get("view");
     if (v === "list" || v === "gallery") setView(v);
     setHydrated(true);
@@ -40,11 +42,12 @@ export default function HomeClient() {
     const params = new URLSearchParams();
     if (selectedTypes.length) params.set("type", selectedTypes.join(","));
     if (selectedCategories.length) params.set("category", selectedCategories.join(","));
+    if (selectedCompanies.length) params.set("company", selectedCompanies.join(","));
     if (view !== "gallery") params.set("view", view);
     const qs = params.toString();
     const url = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
     window.history.replaceState(null, "", url);
-  }, [selectedTypes, selectedCategories, view, hydrated]);
+  }, [selectedTypes, selectedCategories, selectedCompanies, view, hydrated]);
 
   const allTypes = useMemo(
     () => Array.from(new Set(entries.flatMap((e) => e.types))).sort(),
@@ -54,22 +57,31 @@ export default function HomeClient() {
     () => Array.from(new Set(entries.flatMap((e) => e.categories))).sort(),
     []
   );
+  const allCompanies = useMemo(
+    () => Array.from(new Set(entries.flatMap((e) => e.companies || []))).sort(),
+    []
+  );
 
   const filtered = useMemo(() => {
     return entries.filter((e) => {
       const typeMatch = selectedTypes.length === 0 || e.types.some((t) => selectedTypes.includes(t));
       const catMatch = selectedCategories.length === 0 || e.categories.some((c) => selectedCategories.includes(c));
-      return typeMatch && catMatch;
+      const companyMatch =
+        selectedCompanies.length === 0 || (e.companies || []).some((c) => selectedCompanies.includes(c));
+      return typeMatch && catMatch && companyMatch;
     });
-  }, [selectedTypes, selectedCategories]);
+  }, [selectedTypes, selectedCategories, selectedCompanies]);
 
   const toggleType = (t: string) =>
     setSelectedTypes((prev) => (prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t]));
   const toggleCategory = (c: string) =>
     setSelectedCategories((prev) => (prev.includes(c) ? prev.filter((x) => x !== c) : [...prev, c]));
+  const toggleCompany = (c: string) =>
+    setSelectedCompanies((prev) => (prev.includes(c) ? prev.filter((x) => x !== c) : [...prev, c]));
   const clear = () => {
     setSelectedTypes([]);
     setSelectedCategories([]);
+    setSelectedCompanies([]);
   };
 
   return (
@@ -78,7 +90,7 @@ export default function HomeClient() {
         <div className="max-w-2xl">
           <h1 className="text-4xl md:text-5xl font-semibold leading-tight">Projects & Accomplishments</h1>
           <p className="text-secondary mt-4 text-lg">
-            A working record of what I&rsquo;ve built and done, filterable by type and category.
+            A working record of what I&rsquo;ve built and done, filterable by type, category, and company.
             Click through for the full story on each one.
           </p>
         </div>
@@ -86,10 +98,13 @@ export default function HomeClient() {
         <FilterBar
           allTypes={allTypes}
           allCategories={allCategories}
+          allCompanies={allCompanies}
           selectedTypes={selectedTypes}
           selectedCategories={selectedCategories}
+          selectedCompanies={selectedCompanies}
           onToggleType={toggleType}
           onToggleCategory={toggleCategory}
+          onToggleCompany={toggleCompany}
           onClear={clear}
           view={view}
           onSetView={setView}

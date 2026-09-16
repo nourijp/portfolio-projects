@@ -3,10 +3,13 @@
 type Props = {
   allTypes: string[];
   allCategories: string[];
+  allCompanies: string[];
   selectedTypes: string[];
   selectedCategories: string[];
+  selectedCompanies: string[];
   onToggleType: (t: string) => void;
   onToggleCategory: (c: string) => void;
+  onToggleCompany: (c: string) => void;
   onClear: () => void;
   view: "gallery" | "list";
   onSetView: (v: "gallery" | "list") => void;
@@ -38,15 +41,19 @@ function Pill({
 const FilterBar = ({
   allTypes,
   allCategories,
+  allCompanies,
   selectedTypes,
   selectedCategories,
+  selectedCompanies,
   onToggleType,
   onToggleCategory,
+  onToggleCompany,
   onClear,
   view,
   onSetView,
 }: Props) => {
-  const hasActiveFilters = selectedTypes.length > 0 || selectedCategories.length > 0;
+  const hasActiveFilters =
+    selectedTypes.length > 0 || selectedCategories.length > 0 || selectedCompanies.length > 0;
 
   return (
     <div className="flex flex-col gap-4 py-6 border-b border-black">
@@ -104,15 +111,30 @@ const FilterBar = ({
             onClick={() => onToggleCategory(c)}
           />
         ))}
-        {hasActiveFilters && (
-          <button
-            onClick={onClear}
-            className="text-sm text-secondary underline underline-offset-2 ml-2"
-          >
-            Clear filters
-          </button>
-        )}
       </div>
+
+      {allCompanies.length > 0 && (
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-sm text-secondary mr-1">Company</span>
+          {allCompanies.map((c) => (
+            <Pill
+              key={c}
+              label={c}
+              active={selectedCompanies.includes(c)}
+              onClick={() => onToggleCompany(c)}
+            />
+          ))}
+        </div>
+      )}
+
+      {hasActiveFilters && (
+        <button
+          onClick={onClear}
+          className="text-sm text-secondary underline underline-offset-2 w-fit"
+        >
+          Clear filters
+        </button>
+      )}
     </div>
   );
 };

@@ -11,6 +11,7 @@ export type ProjectEntry = {
   imageFit?: "cover" | "contain";
   types: string[];
   categories: string[];
+  companies?: string[];
   externalUrl?: string;
   problem?: string[];
   solution?: string[];
