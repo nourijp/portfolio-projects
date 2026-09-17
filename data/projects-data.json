@@ -163,6 +163,32 @@
       ]
     },
     {
+      "slug": "deterministic-comic-coloring",
+      "title": "Deterministic Comic Coloring Engine",
+      "tagline": "Visual Processing · Style Consistency",
+      "description": "Consistent comic coloring without relying on generative output.",
+      "image": "/images/placeholder-in-progress.svg",
+      "imageFit": "contain",
+      "badge": "In Progress",
+      "types": ["Project"],
+      "categories": ["Product Development"],
+      "companies": [],
+      "problem": [
+        "Generative image workflows can produce inconsistent colors, character details, and visual styles across sequential comic panels.",
+        "That inconsistency breaks continuity across a page or issue, and makes generative coloring unreliable for production use."
+      ],
+      "solution": [
+        "I'm building a deterministic processing system focused on preserving line art, repeatable color application, and style consistency across panels—supplemented by AI only where it doesn't compromise repeatability.",
+        "The engineering focus is on the pipeline itself: how line art is preserved, how color decisions are made deterministically, and how the same input reliably produces the same output."
+      ],
+      "highlights": [
+        "Line art preservation",
+        "Deterministic (non-generative) color processing",
+        "Cross-panel style consistency",
+        "Repeatable output"
+      ]
+    },
+    {
       "slug": "26-site-deployment",
       "title": "34-Site Deployment System",
       "tagline": "Next.js · GitHub · Cloudflare · Automation",
@@ -202,6 +228,7 @@
       "types": ["Project"],
       "categories": ["Product Development"],
       "companies": [],
+      "draft": true,
       "highlights": ["Raycast script commands", "Obsidian templating & automation", "Shell alias library", "Cross-device sync via iCloud & Git"]
     },
     {

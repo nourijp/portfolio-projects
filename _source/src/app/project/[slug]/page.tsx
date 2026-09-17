@@ -4,8 +4,11 @@ import projectsDataJson from "../../../../public/data/projects-data.json";
 import { ProjectEntry } from "../../components/project-card";
 
 // Entries with an externalUrl (if any exist in the future) link out from
-// the gallery card directly and don't get a local page here.
-const localEntries = (projectsDataJson.entries as ProjectEntry[]).filter((e) => !e.externalUrl);
+// the gallery card directly and don't get a local page here. Draft entries
+// are hidden from the live site entirely (no static page generated).
+const localEntries = (projectsDataJson.entries as ProjectEntry[]).filter(
+  (e) => !e.externalUrl && !e.draft
+);
 
 export async function generateStaticParams() {
   return localEntries.map((entry) => ({ slug: entry.slug }));
@@ -54,6 +57,9 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         </Link>
 
         <div className="flex flex-wrap gap-2 mb-4">
+          {entry.badge && (
+            <span className="text-xs py-1 px-2.5 rounded-full bg-amber-100 text-amber-800">{entry.badge}</span>
+          )}
           {entry.types.map((t) => (
             <span key={t} className="text-xs py-1 px-2.5 rounded-full bg-primary text-white">{t}</span>
           ))}

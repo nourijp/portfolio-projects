@@ -6,7 +6,7 @@ import projectsDataJson from "../../public/data/projects-data.json";
 import FilterBar from "./components/filter-bar";
 import ProjectCard, { ProjectEntry } from "./components/project-card";
 
-const entries = projectsDataJson.entries as ProjectEntry[];
+const entries = (projectsDataJson.entries as ProjectEntry[]).filter((e) => !e.draft);
 
 function parseList(v: string | null): string[] {
   return v ? v.split(",").filter(Boolean) : [];
@@ -15,7 +15,11 @@ function parseList(v: string | null): string[] {
 export default function HomeClient() {
   const searchParams = useSearchParams();
 
-  const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
+  // Type is single-select (radio-like), defaulting to "Project" -- a post
+  // with multiple types (e.g. Project + Accomplishment) still surfaces under
+  // either selection via the .some() match below, so dual-type posts aren't
+  // lost by disallowing multiple *selected* types at once.
+  const [selectedTypes, setSelectedTypes] = useState<string[]>(["Project"]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedCompanies, setSelectedCompanies] = useState<string[]>([]);
   const [view, setView] = useState<"gallery" | "list">("gallery");
@@ -23,7 +27,8 @@ export default function HomeClient() {
 
   // Initialize from URL on first load so filtered links from other sites work.
   useEffect(() => {
-    setSelectedTypes(parseList(searchParams.get("type")));
+    const urlType = parseList(searchParams.get("type"));
+    if (urlType.length > 0) setSelectedTypes([urlType[0]]);
     setSelectedCategories(parseList(searchParams.get("category")));
     setSelectedCompanies(parseList(searchParams.get("company")));
     const v = searchParams.get("view");
@@ -75,14 +80,13 @@ export default function HomeClient() {
     return [...matches].sort((a, b) => Number(!!a.minor) - Number(!!b.minor));
   }, [selectedTypes, selectedCategories, selectedCompanies]);
 
-  const toggleType = (t: string) =>
-    setSelectedTypes((prev) => (prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t]));
+  const setType = (t: string) => setSelectedTypes([t]);
   const toggleCategory = (c: string) =>
     setSelectedCategories((prev) => (prev.includes(c) ? prev.filter((x) => x !== c) : [...prev, c]));
   const toggleCompany = (c: string) =>
     setSelectedCompanies((prev) => (prev.includes(c) ? prev.filter((x) => x !== c) : [...prev, c]));
   const clear = () => {
-    setSelectedTypes([]);
+    setSelectedTypes(["Project"]);
     setSelectedCategories([]);
     setSelectedCompanies([]);
   };
@@ -105,7 +109,7 @@ export default function HomeClient() {
           selectedTypes={selectedTypes}
           selectedCategories={selectedCategories}
           selectedCompanies={selectedCompanies}
-          onToggleType={toggleType}
+          onSetType={setType}
           onToggleCategory={toggleCategory}
           onToggleCompany={toggleCompany}
           onClear={clear}

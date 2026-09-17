@@ -19,6 +19,8 @@ export type ProjectEntry = {
   categories: string[];
   companies?: string[];
   minor?: boolean;
+  draft?: boolean;
+  badge?: string;
   externalUrl?: string;
   problem?: string[];
   solution?: string[];
@@ -36,12 +38,19 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
     const listFitClass = imgFit === "contain" ? "object-contain bg-black" : "object-cover bg-softGray";
     return (
       <div className="group flex items-center gap-4 py-4 border-b border-softGray hover:bg-softGray/50 transition-colors px-2 -mx-2 rounded-lg">
-        <div className={`w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 ${listFitClass}`}>
+        <div className={`relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 ${listFitClass}`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={img} alt={entry.title} className={`w-full h-full ${imgFit === "contain" ? "object-contain" : "object-cover"}`} />
         </div>
         <div className="flex-1 min-w-0">
-          <h5 className="text-lg font-semibold truncate">{entry.title}</h5>
+          <div className="flex items-center gap-2">
+            <h5 className="text-lg font-semibold truncate">{entry.title}</h5>
+            {entry.badge && (
+              <span className="text-xs py-0.5 px-2 rounded-full bg-amber-100 text-amber-800 flex-shrink-0">
+                {entry.badge}
+              </span>
+            )}
+          </div>
           <p className="text-sm text-secondary truncate">{entry.description || entry.tagline}</p>
         </div>
         <div className="hidden sm:flex flex-wrap gap-1.5 max-w-xs justify-end">
@@ -74,6 +83,11 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
           className={`w-full h-auto ${galleryImgFit === "contain" ? "object-contain" : "object-cover"} transition-transform duration-300 group-hover:scale-[1.02]`}
         />
         <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors" />
+        {entry.badge && (
+          <span className="absolute top-3 left-3 text-xs py-1 px-2.5 rounded-full bg-amber-100 text-amber-800">
+            {entry.badge}
+          </span>
+        )}
       </div>
       <div className="flex flex-col gap-1.5">
         <div className="flex flex-wrap gap-1.5">

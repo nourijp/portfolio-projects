@@ -7,7 +7,7 @@ type Props = {
   selectedTypes: string[];
   selectedCategories: string[];
   selectedCompanies: string[];
-  onToggleType: (t: string) => void;
+  onSetType: (t: string) => void;
   onToggleCategory: (c: string) => void;
   onToggleCompany: (c: string) => void;
   onClear: () => void;
@@ -45,15 +45,19 @@ const FilterBar = ({
   selectedTypes,
   selectedCategories,
   selectedCompanies,
-  onToggleType,
+  onSetType,
   onToggleCategory,
   onToggleCompany,
   onClear,
   view,
   onSetView,
 }: Props) => {
+  // Type is single-select and always has a value, so it isn't counted as an
+  // "active filter" unless it's been switched away from the default.
   const hasActiveFilters =
-    selectedTypes.length > 0 || selectedCategories.length > 0 || selectedCompanies.length > 0;
+    (selectedTypes[0] && selectedTypes[0] !== "Project") ||
+    selectedCategories.length > 0 ||
+    selectedCompanies.length > 0;
 
   return (
     <div className="flex flex-col gap-4 py-6 border-b border-black">
@@ -65,7 +69,7 @@ const FilterBar = ({
               key={t}
               label={t}
               active={selectedTypes.includes(t)}
-              onClick={() => onToggleType(t)}
+              onClick={() => onSetType(t)}
             />
           ))}
         </div>
