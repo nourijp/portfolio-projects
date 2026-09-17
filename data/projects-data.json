@@ -391,14 +391,15 @@
       "title": "Proxy Priority — Intelligent Task Prioritization",
       "tagline": "Productivity · Automation · Obsidian · Product Design",
       "description": "A task-prioritization system designed around what deserves attention now.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "https://ai.hamednouri.com/images/work/proxy-priority-trmnl-thumbnail.jpg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
       "categories": [
         "Obsidian",
-        "Automation"
+        "Automation",
+        "Hardware"
       ],
       "companies": [],
       "problem": [
@@ -407,12 +408,14 @@
       ],
       "solution": [
         "I developed Proxy Priority as a structured approach to prioritization inside my broader productivity system.",
-        "Rather than relying only on manually ordered lists, the system provides additional structure for evaluating and surfacing work based on its current importance."
+        "Rather than relying only on manually ordered lists, the system provides additional structure for evaluating and surfacing work based on its current importance.",
+        "Proxy Priority is also integrated into my TRMNL e-ink dashboard pipeline (see Obsidian → TRMNL E-Ink Pipeline), so critical projects and tasks stay visible on an always-on display without opening Obsidian at all."
       ],
       "highlights": [
         "Task prioritization",
         "Structured productivity workflows",
         "Obsidian integration",
+        "TRMNL e-ink dashboard integration",
         "Custom metadata",
         "Workflow automation",
         "Personal productivity tooling"
