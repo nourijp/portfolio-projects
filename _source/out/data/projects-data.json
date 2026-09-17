@@ -458,8 +458,8 @@
       "title": "PARA+NET Knowledge System",
       "tagline": "Knowledge Management · Obsidian · Information Architecture · Automation",
       "description": "Projects, Areas, Resources, Notes, Events, and Tasks connected in one system.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "https://ai.hamednouri.com/images/work/para-net-thumbnail.jpg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
