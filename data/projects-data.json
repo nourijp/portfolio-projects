@@ -5,11 +5,11 @@
       "title": "Voice Interface for My Second Brain",
       "tagline": "Speech-to-Text · Local LLMs · Obsidian · Markdown",
       "description": "A voice-driven interface that turns natural speech into structured tasks, projects, events, and notes inside a customized Obsidian knowledge system.",
-      "image": "https://ai.hamednouri.com/images/work/voice-interface-obsidian-ai-assistant.jpg",
-      "imageFit": "contain",
+      "image": "https://ai.hamednouri.com/images/work/voice-interface-omni-obsidian-flow.jpg",
+      "imageFit": "cover",
       "galleryImage": "https://ai.hamednouri.com/images/work/voice-interface-thumbnail.jpg",
       "galleryImageFit": "cover",
-      "detailImage": "https://ai.hamednouri.com/images/work/voice-interface-detail.jpg",
+      "detailImage": "https://ai.hamednouri.com/images/work/voice-interface-omni-obsidian-flow.jpg",
       "detailImageFit": "cover",
       "types": [
         "Project"
