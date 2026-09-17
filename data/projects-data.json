@@ -1211,6 +1211,32 @@
       ]
     },
     {
+      "slug": "brand-aid",
+      "title": "Brand Aid",
+      "tagline": "Design Automation · macOS · Branding",
+      "description": "A native macOS app for generating consistently branded graphics—base image, logo, crop, and placement in one pass.",
+      "image": "https://ai.hamednouri.com/images/work/brand-aid-app-thumbnail.jpg",
+      "imageFit": "cover",
+      "types": ["Project"],
+      "categories": ["Creative Tools", "Automation", "macOS"],
+      "companies": [],
+      "problem": [
+        "Every project on this site, and every social card announcing one, needed the same branding treatment: a base image, my logo placed consistently, cropped to the right ratio. Doing that by hand in a general design tool for dozens of images added repetitive setup work every time."
+      ],
+      "solution": [
+        "I built Brand Aid, a native macOS app that takes a base image, overlays a logo at a configurable size and position, crops to a chosen aspect ratio, and exports it ready to use.",
+        "It's what generated most of the thumbnails across this project archive, including its own."
+      ],
+      "highlights": [
+        "Base image + logo compositing",
+        "Configurable crop ratios",
+        "Logo size & placement controls",
+        "One-click export",
+        "Native macOS app",
+        "Used to produce this site's own thumbnails"
+      ]
+    },
+    {
       "slug": "example-accomplishment",
       "title": "[Example] Accomplishment Placeholder",
       "tagline": "Replace with a real accomplishment",
