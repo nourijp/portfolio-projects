@@ -54,10 +54,12 @@ export default function HomeClient() {
     window.history.replaceState(null, "", url);
   }, [selectedTypes, selectedCategories, selectedCompanies, view, hydrated]);
 
-  const allTypes = useMemo(
-    () => Array.from(new Set(entries.flatMap((e) => e.types))).sort(),
-    []
-  );
+  // Fixed order (not alphabetical) -- Project first since it's the default.
+  const TYPE_ORDER = ["Project", "Accomplishment", "Testimonial"];
+  const allTypes = useMemo(() => {
+    const present = new Set(entries.flatMap((e) => e.types));
+    return TYPE_ORDER.filter((t) => present.has(t));
+  }, []);
   const allCategories = useMemo(
     () => Array.from(new Set(entries.flatMap((e) => e.categories))).sort(),
     []
