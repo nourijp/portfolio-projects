@@ -1415,7 +1415,7 @@
     },
     {
       "slug": "fluxer-community-site-nas",
-      "title": "Self-Hosted Community Platform (Fluxer)",
+      "title": "Self-Hosted Community Platform",
       "tagline": "Fluxer · Self-Hosted · Community",
       "description": "Deployed Fluxer, a Discord-like community platform, self-hosted through the NAS.",
       "image": "/images/gradients/gradient-6.svg",
