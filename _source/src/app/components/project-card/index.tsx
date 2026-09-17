@@ -75,7 +75,7 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
   const galleryFitClass = galleryImgFit === "contain" ? "object-contain bg-black" : "object-cover bg-softGray";
 
   return (
-    <div className="group flex flex-col gap-3 break-inside-avoid mb-6">
+    <div className="group flex flex-col gap-3">
       <div className={`relative rounded-xl overflow-hidden ${galleryFitClass}`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img

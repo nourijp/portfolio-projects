@@ -131,7 +131,7 @@ export default function HomeClient() {
         {filtered.length === 0 ? (
           <p className="text-secondary py-16 text-center">No entries match these filters yet.</p>
         ) : view === "gallery" ? (
-          <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 pt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
             {filtered.map((entry) => (
               <ProjectCard key={entry.slug} entry={entry} view="gallery" />
             ))}
