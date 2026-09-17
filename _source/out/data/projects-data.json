@@ -1885,22 +1885,6 @@
       "categories": [],
       "companies": [],
       "highlights": []
-    },
-    {
-      "slug": "example-testimonial",
-      "title": "[Example] Testimonial Placeholder",
-      "tagline": "“This is a placeholder quote — replace with a real one.”",
-      "description": "“This is a placeholder quote showing how testimonials will look — a short pull quote in list view, a designed quote graphic in gallery view. Replace both the text and the images with a real quote and the person's photo.” — Example Person, Example Title",
-      "image": "/images/placeholder-quote.svg",
-      "listImage": "/images/placeholder-headshot.svg",
-      "imageFit": "contain",
-      "listImageFit": "contain",
-      "types": [
-        "Testimonial"
-      ],
-      "categories": [],
-      "companies": [],
-      "highlights": []
     }
   ]
 }

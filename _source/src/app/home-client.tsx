@@ -109,6 +109,9 @@ export default function HomeClient() {
     // (e.g. "AI") may not exist under Accomplishment/Testimonial at all.
     setSelectedCategories([]);
     setSelectedCompanies([]);
+    // Testimonials read better as a list (quote + name) than as gallery
+    // cards; other types default back to the gallery.
+    setView(t === "Testimonial" ? "list" : "gallery");
   };
   const toggleCategory = (c: string) =>
     setSelectedCategories((prev) => (prev.includes(c) ? prev.filter((x) => x !== c) : [...prev, c]));
