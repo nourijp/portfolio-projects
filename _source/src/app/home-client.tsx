@@ -60,13 +60,23 @@ export default function HomeClient() {
     const present = new Set(entries.flatMap((e) => e.types));
     return TYPE_ORDER.filter((t) => present.has(t));
   }, []);
+  // Category and Company are scoped to whichever Type is selected --
+  // e.g. Project-only tags like "AI" or a client name aren't meaningful
+  // once you're looking at Accomplishments or Testimonials.
+  const typeScopedEntries = useMemo(
+    () =>
+      selectedTypes.length === 0
+        ? entries
+        : entries.filter((e) => e.types.some((t) => selectedTypes.includes(t))),
+    [selectedTypes]
+  );
   const allCategories = useMemo(
-    () => Array.from(new Set(entries.flatMap((e) => e.categories))).sort(),
-    []
+    () => Array.from(new Set(typeScopedEntries.flatMap((e) => e.categories))).sort(),
+    [typeScopedEntries]
   );
   const allCompanies = useMemo(
-    () => Array.from(new Set(entries.flatMap((e) => e.companies || []))).sort(),
-    []
+    () => Array.from(new Set(typeScopedEntries.flatMap((e) => e.companies || []))).sort(),
+    [typeScopedEntries]
   );
 
   const filtered = useMemo(() => {
@@ -93,7 +103,13 @@ export default function HomeClient() {
     return [...matches].sort((a, b) => demotionScore(a) - demotionScore(b));
   }, [selectedTypes, selectedCategories, selectedCompanies]);
 
-  const setType = (t: string) => setSelectedTypes([t]);
+  const setType = (t: string) => {
+    setSelectedTypes([t]);
+    // Category/Company are scoped to Type -- a selection valid for Project
+    // (e.g. "AI") may not exist under Accomplishment/Testimonial at all.
+    setSelectedCategories([]);
+    setSelectedCompanies([]);
+  };
   const toggleCategory = (c: string) =>
     setSelectedCategories((prev) => (prev.includes(c) ? prev.filter((x) => x !== c) : [...prev, c]));
   const toggleCompany = (c: string) =>

@@ -134,9 +134,12 @@ const FilterBar = ({
       {hasActiveFilters && (
         <button
           onClick={onClear}
-          className="text-sm text-secondary underline underline-offset-2 w-fit"
+          className="py-2 px-4 rounded-full text-sm font-medium border border-mistGray bg-white text-black hover:border-primary transition-colors w-fit flex items-center gap-1.5"
         >
           Clear filters
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
         </button>
       )}
     </div>
