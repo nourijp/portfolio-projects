@@ -705,8 +705,8 @@
       "title": "Portfolio Card Studio",
       "tagline": "Portfolio · Design · Automation · Content",
       "description": "Generate consistent visual cards for showcasing projects.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "https://ai.hamednouri.com/images/work/portfolio-card-studio-thumbnail.jpg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
