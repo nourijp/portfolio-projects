@@ -42,7 +42,8 @@
         "Integration with existing Obsidian workflows"
       ],
       "listImage": "/images/icons/voice-interface-obsidian.png",
-      "listImageFit": "contain"
+      "listImageFit": "contain",
+      "featured": true
     },
     {
       "slug": "multilingual-collaboration",
@@ -76,7 +77,51 @@
         "AI-assisted translation",
         "Structured content management",
         "Cross-language editing"
-      ]
+      ],
+      "featured": true
+    },
+    {
+      "slug": "trmnl-eink-pipeline",
+      "title": "Your Second Brain, Always Visible",
+      "tagline": "Obsidian · E-Ink · APIs · Automation",
+      "description": "A calm, always-on interface that turns information from my Obsidian knowledge system into glanceable screens for tasks, projects, events, notes, and daily context.",
+      "image": "https://ai.hamednouri.com/images/work/trmnl-eink-dashboard-obsidian-second-brain.jpg",
+      "imageFit": "cover",
+      "galleryImage": "https://ai.hamednouri.com/images/work/trmnl-eink-dashboard-thumbnail.jpg",
+      "galleryImageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Automation",
+        "Obsidian",
+        "Hardware"
+      ],
+      "companies": [],
+      "problem": [
+        "My tasks, calendar, projects, notes, and other useful information already existed digitally—but seeing them meant opening an application and actively looking for them.",
+        "I wanted important information to remain visible without another screen demanding attention."
+      ],
+      "solution": [
+        "I connected my Obsidian knowledge system to an e-ink display.",
+        "A custom service reads structured Markdown and other data sources, determines what should be displayed, renders display-ready screens, and sends them to the device.",
+        "Different views can surface tasks, calendar information, projects, notes, highlights, meal planning, and other context."
+      ],
+      "howItWorks": [
+        "**Design principle:** Inform, don't interrupt. The display is intentionally quiet. It provides ambient awareness without notifications, app switching, or another bright screen."
+      ],
+      "highlights": [
+        "Obsidian / Markdown source",
+        "E-ink rendering",
+        "Backend APIs",
+        "Scheduled refresh",
+        "Multiple information views",
+        "Caching",
+        "Always-on ambient interface"
+      ],
+      "listImage": "/images/icons/trmnl-eink-pipeline.png",
+      "listImageFit": "contain",
+      "featured": true
     },
     {
       "slug": "local-ai-document-pipeline",
@@ -119,49 +164,8 @@
         "Knowledge-base routing"
       ],
       "listImage": "/images/icons/local-ai-document-pipeline.png",
-      "listImageFit": "contain"
-    },
-    {
-      "slug": "trmnl-eink-pipeline",
-      "title": "Your Second Brain, Always Visible",
-      "tagline": "Obsidian · E-Ink · APIs · Automation",
-      "description": "A calm, always-on interface that turns information from my Obsidian knowledge system into glanceable screens for tasks, projects, events, notes, and daily context.",
-      "image": "https://ai.hamednouri.com/images/work/trmnl-eink-dashboard-obsidian-second-brain.jpg",
-      "imageFit": "cover",
-      "galleryImage": "https://ai.hamednouri.com/images/work/trmnl-eink-dashboard-thumbnail.jpg",
-      "galleryImageFit": "cover",
-      "types": [
-        "Project"
-      ],
-      "categories": [
-        "Automation",
-        "Obsidian",
-        "Hardware"
-      ],
-      "companies": [],
-      "problem": [
-        "My tasks, calendar, projects, notes, and other useful information already existed digitally—but seeing them meant opening an application and actively looking for them.",
-        "I wanted important information to remain visible without another screen demanding attention."
-      ],
-      "solution": [
-        "I connected my Obsidian knowledge system to an e-ink display.",
-        "A custom service reads structured Markdown and other data sources, determines what should be displayed, renders display-ready screens, and sends them to the device.",
-        "Different views can surface tasks, calendar information, projects, notes, highlights, meal planning, and other context."
-      ],
-      "howItWorks": [
-        "**Design principle:** Inform, don't interrupt. The display is intentionally quiet. It provides ambient awareness without notifications, app switching, or another bright screen."
-      ],
-      "highlights": [
-        "Obsidian / Markdown source",
-        "E-ink rendering",
-        "Backend APIs",
-        "Scheduled refresh",
-        "Multiple information views",
-        "Caching",
-        "Always-on ambient interface"
-      ],
-      "listImage": "/images/icons/trmnl-eink-pipeline.png",
-      "listImageFit": "contain"
+      "listImageFit": "contain",
+      "featured": true
     },
     {
       "slug": "comic-to-video-tool",
@@ -196,7 +200,8 @@
         "Batch processing"
       ],
       "listImage": "/images/icons/comic-to-video-tool.png",
-      "listImageFit": "contain"
+      "listImageFit": "contain",
+      "featured": true
     },
     {
       "slug": "deterministic-comic-coloring",
@@ -228,7 +233,297 @@
         "Deterministic (non-generative) color processing",
         "Cross-panel style consistency",
         "Repeatable output"
-      ]
+      ],
+      "featured": true
+    },
+    {
+      "slug": "proxy-priority",
+      "title": "Proxy Priority — Intelligent Task Prioritization",
+      "tagline": "Productivity · Automation · Obsidian · Product Design",
+      "description": "A task-prioritization system designed around what deserves attention now.",
+      "image": "https://ai.hamednouri.com/images/work/proxy-priority-trmnl-thumbnail.jpg",
+      "imageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Obsidian",
+        "Automation",
+        "Hardware"
+      ],
+      "companies": [],
+      "problem": [
+        "Traditional task managers are good at storing tasks but often leave the harder question unanswered: what should I actually work on next?",
+        "As projects, deadlines, responsibilities, and priorities multiply, a flat task list becomes increasingly difficult to manage."
+      ],
+      "solution": [
+        "I developed Proxy Priority as a structured approach to prioritization inside my broader productivity system.",
+        "Rather than relying only on manually ordered lists, the system provides additional structure for evaluating and surfacing work based on its current importance.",
+        "Proxy Priority is also integrated into my TRMNL e-ink dashboard pipeline (see Obsidian → TRMNL E-Ink Pipeline), so critical projects and tasks stay visible on an always-on display without opening Obsidian at all."
+      ],
+      "highlights": [
+        "Task prioritization",
+        "Structured productivity workflows",
+        "Obsidian integration",
+        "TRMNL e-ink dashboard integration",
+        "Custom metadata",
+        "Workflow automation",
+        "Personal productivity tooling"
+      ],
+      "featured": true
+    },
+    {
+      "slug": "26-site-deployment",
+      "title": "34-Site Deployment System",
+      "tagline": "Next.js · GitHub · Cloudflare · Automation",
+      "description": "A deployment system that lets me manage dozens of independent project websites without manually configuring hosting, DNS, repositories, and deployments for each one.",
+      "image": "https://ai.hamednouri.com/images/work/34-site-deployment-thumbnail.jpg",
+      "imageFit": "cover",
+      "galleryImage": "https://ai.hamednouri.com/images/work/34-site-deployment-thumbnail.jpg",
+      "galleryImageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Automation"
+      ],
+      "companies": [],
+      "problem": [
+        "Maintaining dozens of small project and portfolio sites creates repetitive infrastructure work.",
+        "Every new site normally requires repository setup, deployment configuration, DNS records, subdomains, and ongoing maintenance."
+      ],
+      "solution": [
+        "I automated the workflow.",
+        "The system builds, exports, deploys, and manages 34 independent websites across GitHub and Cloudflare.",
+        "Each project remains independently version-controlled and mapped to its own subdomain while shared automation handles repetitive deployment work."
+      ],
+      "highlights": [
+        "34 sites",
+        "Automated deployments",
+        "GitHub integration",
+        "Cloudflare API",
+        "DNS automation",
+        "Next.js static exports",
+        "Independent version control"
+      ],
+      "featured": true
+    },
+    {
+      "slug": "para-net-knowledge-system",
+      "title": "PARA+NET Knowledge System",
+      "tagline": "Knowledge Management · Obsidian · Information Architecture · Automation",
+      "description": "Projects, Areas, Resources, Notes, Events, and Tasks connected in one system.",
+      "image": "https://ai.hamednouri.com/images/work/para-net-thumbnail.jpg",
+      "imageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Obsidian",
+        "Automation"
+      ],
+      "companies": [],
+      "problem": [
+        "PARA provides a useful structure for Projects, Areas, Resources, and Archives, but much of my daily information doesn't fit neatly into those categories.",
+        "Notes, events, and tasks are not secondary information. They are fundamental objects that connect everything else."
+      ],
+      "solution": [
+        "I expanded the model into PARA+NET, adding Notes, Events, and Tasks as first-class parts of the system.",
+        "I then customized Obsidian and supporting workflows so these different objects could connect rather than live in isolated folders or applications.",
+        "The project combines information architecture, workflow design, metadata, interface customization, and automation."
+      ],
+      "highlights": [
+        "Custom information architecture",
+        "Projects, Areas, Resources and Archives",
+        "Notes, Events, and Tasks",
+        "Connected metadata",
+        "Obsidian customization",
+        "Workflow automation",
+        "Personal knowledge management"
+      ],
+      "featured": true
+    },
+    {
+      "slug": "social-card-studio",
+      "title": "Social Card Studio",
+      "tagline": "Design · Content · Automation · Social Media",
+      "description": "A focused tool for producing consistent social graphics quickly.",
+      "image": "https://ai.hamednouri.com/images/work/social-card-studio-thumbnail.jpg",
+      "imageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Creative Tools",
+        "Automation"
+      ],
+      "companies": [],
+      "minor": true,
+      "solution": [
+        "Repeatedly creating similar social graphics in general-purpose design software adds unnecessary setup and formatting work. I built a focused interface around the specific elements needed for social cards, reducing repetitive design work while maintaining visual consistency."
+      ],
+      "highlights": [
+        "Social graphics",
+        "Content production",
+        "Reusable layouts",
+        "Visual consistency",
+        "Workflow acceleration"
+      ],
+      "listImage": "/images/icons/social-card-studio.png",
+      "listImageFit": "contain",
+      "featured": true
+    },
+    {
+      "slug": "ka-blam-formatter",
+      "title": "Ka-Blam Formatter",
+      "tagline": "Publishing · Formatting · Automation",
+      "description": "Automates repetitive formatting work for print publishing.",
+      "image": "https://ai.hamednouri.com/images/work/ka-blam-formatter-thumbnail.jpg",
+      "imageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Publishing",
+        "Automation"
+      ],
+      "companies": [],
+      "minor": true,
+      "solution": [
+        "Print production involves exact formatting requirements and repetitive preparation steps. I built a focused formatting tool to reduce repetitive manual work and make output more consistent."
+      ],
+      "highlights": [
+        "Publishing workflow",
+        "Automated formatting",
+        "Print preparation",
+        "Production tooling"
+      ],
+      "listImage": "/images/icons/ka-blam-formatter.png",
+      "listImageFit": "contain",
+      "featured": true
+    },
+    {
+      "slug": "portfolio-card-studio",
+      "title": "Portfolio Card Studio",
+      "tagline": "Portfolio · Design · Automation · Content",
+      "description": "Generate consistent visual cards for showcasing projects.",
+      "image": "https://ai.hamednouri.com/images/work/portfolio-card-studio-thumbnail.jpg",
+      "imageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Creative Tools",
+        "Automation"
+      ],
+      "companies": [],
+      "minor": true,
+      "solution": [
+        "A large project portfolio needs visual consistency, but manually recreating layouts for every project wastes time. I built a dedicated card-generation tool around my portfolio's visual system so project graphics can be produced faster while retaining a consistent structure."
+      ],
+      "highlights": [
+        "Portfolio automation",
+        "Reusable layouts",
+        "Visual consistency",
+        "Content production",
+        "Purpose-built tooling"
+      ],
+      "listImage": "/images/icons/portfolio-card-studio.png",
+      "listImageFit": "contain",
+      "featured": true
+    },
+    {
+      "slug": "banner-studio",
+      "title": "Banner Studio",
+      "tagline": "Design · Automation · Content Tools",
+      "description": "A focused design utility for quickly generating consistent banners.",
+      "image": "https://ai.hamednouri.com/images/work/banner-studio-thumbnail.jpg",
+      "imageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Creative Tools",
+        "Automation"
+      ],
+      "companies": [],
+      "minor": true,
+      "solution": [
+        "Instead of repeatedly rebuilding layouts in a full design application, I created a dedicated interface for the banner-production workflow."
+      ],
+      "highlights": [
+        "Banner generation",
+        "Reusable layouts",
+        "Design automation",
+        "Faster content production"
+      ],
+      "listImage": "/images/icons/banner-studio.png",
+      "listImageFit": "contain",
+      "featured": true
+    },
+    {
+      "slug": "brand-aid",
+      "title": "Brand Aid",
+      "tagline": "Design Automation · macOS · Branding",
+      "description": "A native macOS app for generating consistently branded graphics—base image, logo, crop, and placement in one pass.",
+      "image": "https://ai.hamednouri.com/images/work/brand-aid-app-thumbnail.jpg",
+      "imageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Creative Tools",
+        "Automation",
+        "macOS"
+      ],
+      "companies": [],
+      "problem": [
+        "Every project on this site, and every social card announcing one, needed the same branding treatment: a base image, my logo placed consistently, cropped to the right ratio. Doing that by hand in a general design tool for dozens of images added repetitive setup work every time."
+      ],
+      "solution": [
+        "I built Brand Aid, a native macOS app that takes a base image, overlays a logo at a configurable size and position, crops to a chosen aspect ratio, and exports it ready to use.",
+        "It's what generated most of the thumbnails across this project archive, including its own."
+      ],
+      "highlights": [
+        "Base image + logo compositing",
+        "Configurable crop ratios",
+        "Logo size & placement controls",
+        "One-click export",
+        "Native macOS app",
+        "Used to produce this site's own thumbnails"
+      ],
+      "listImage": "/images/icons/brand-aid.png",
+      "listImageFit": "contain",
+      "featured": true
+    },
+    {
+      "slug": "profilelauncher",
+      "title": "ProfileLauncher",
+      "tagline": "Browser · Productivity · macOS · Utility",
+      "description": "Launch the right browser environment for the right context.",
+      "image": "https://ai.hamednouri.com/images/work/profilelauncher-thumbnail.jpg",
+      "imageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "macOS",
+        "Automation"
+      ],
+      "companies": [],
+      "minor": true,
+      "solution": [
+        "Multiple accounts and browser contexts create unnecessary friction when switching between different kinds of work. I built a lightweight launcher around those contexts so the correct environment can be opened directly."
+      ],
+      "highlights": [
+        "Browser profiles",
+        "Context switching",
+        "macOS",
+        "Workflow acceleration"
+      ],
+      "listImage": "/images/icons/profilelauncher.png",
+      "listImageFit": "contain",
+      "featured": true
     },
     {
       "slug": "obsidian-planning-system",
@@ -295,41 +590,6 @@
       ]
     },
     {
-      "slug": "26-site-deployment",
-      "title": "34-Site Deployment System",
-      "tagline": "Next.js · GitHub · Cloudflare · Automation",
-      "description": "A deployment system that lets me manage dozens of independent project websites without manually configuring hosting, DNS, repositories, and deployments for each one.",
-      "image": "https://ai.hamednouri.com/images/work/34-site-deployment-thumbnail.jpg",
-      "imageFit": "cover",
-      "galleryImage": "https://ai.hamednouri.com/images/work/34-site-deployment-thumbnail.jpg",
-      "galleryImageFit": "cover",
-      "types": [
-        "Project"
-      ],
-      "categories": [
-        "Automation"
-      ],
-      "companies": [],
-      "problem": [
-        "Maintaining dozens of small project and portfolio sites creates repetitive infrastructure work.",
-        "Every new site normally requires repository setup, deployment configuration, DNS records, subdomains, and ongoing maintenance."
-      ],
-      "solution": [
-        "I automated the workflow.",
-        "The system builds, exports, deploys, and manages 34 independent websites across GitHub and Cloudflare.",
-        "Each project remains independently version-controlled and mapped to its own subdomain while shared automation handles repetitive deployment work."
-      ],
-      "highlights": [
-        "34 sites",
-        "Automated deployments",
-        "GitHub integration",
-        "Cloudflare API",
-        "DNS automation",
-        "Next.js static exports",
-        "Independent version control"
-      ]
-    },
-    {
       "slug": "cross-device-automation",
       "title": "Cross-Device Automation System",
       "tagline": "Raycast, Obsidian, Shell",
@@ -374,41 +634,6 @@
       ]
     },
     {
-      "slug": "proxy-priority",
-      "title": "Proxy Priority — Intelligent Task Prioritization",
-      "tagline": "Productivity · Automation · Obsidian · Product Design",
-      "description": "A task-prioritization system designed around what deserves attention now.",
-      "image": "https://ai.hamednouri.com/images/work/proxy-priority-trmnl-thumbnail.jpg",
-      "imageFit": "cover",
-      "types": [
-        "Project"
-      ],
-      "categories": [
-        "Obsidian",
-        "Automation",
-        "Hardware"
-      ],
-      "companies": [],
-      "problem": [
-        "Traditional task managers are good at storing tasks but often leave the harder question unanswered: what should I actually work on next?",
-        "As projects, deadlines, responsibilities, and priorities multiply, a flat task list becomes increasingly difficult to manage."
-      ],
-      "solution": [
-        "I developed Proxy Priority as a structured approach to prioritization inside my broader productivity system.",
-        "Rather than relying only on manually ordered lists, the system provides additional structure for evaluating and surfacing work based on its current importance.",
-        "Proxy Priority is also integrated into my TRMNL e-ink dashboard pipeline (see Obsidian → TRMNL E-Ink Pipeline), so critical projects and tasks stay visible on an always-on display without opening Obsidian at all."
-      ],
-      "highlights": [
-        "Task prioritization",
-        "Structured productivity workflows",
-        "Obsidian integration",
-        "TRMNL e-ink dashboard integration",
-        "Custom metadata",
-        "Workflow automation",
-        "Personal productivity tooling"
-      ]
-    },
-    {
       "slug": "proxy-phase",
       "title": "Proxy Phase — Project Lifecycle System",
       "tagline": "Productivity · Project Management · Obsidian · Automation",
@@ -438,40 +663,6 @@
         "Workflow design",
         "Project metadata",
         "Automation-ready architecture"
-      ]
-    },
-    {
-      "slug": "para-net-knowledge-system",
-      "title": "PARA+NET Knowledge System",
-      "tagline": "Knowledge Management · Obsidian · Information Architecture · Automation",
-      "description": "Projects, Areas, Resources, Notes, Events, and Tasks connected in one system.",
-      "image": "https://ai.hamednouri.com/images/work/para-net-thumbnail.jpg",
-      "imageFit": "cover",
-      "types": [
-        "Project"
-      ],
-      "categories": [
-        "Obsidian",
-        "Automation"
-      ],
-      "companies": [],
-      "problem": [
-        "PARA provides a useful structure for Projects, Areas, Resources, and Archives, but much of my daily information doesn't fit neatly into those categories.",
-        "Notes, events, and tasks are not secondary information. They are fundamental objects that connect everything else."
-      ],
-      "solution": [
-        "I expanded the model into PARA+NET, adding Notes, Events, and Tasks as first-class parts of the system.",
-        "I then customized Obsidian and supporting workflows so these different objects could connect rather than live in isolated folders or applications.",
-        "The project combines information architecture, workflow design, metadata, interface customization, and automation."
-      ],
-      "highlights": [
-        "Custom information architecture",
-        "Projects, Areas, Resources and Archives",
-        "Notes, Events, and Tasks",
-        "Connected metadata",
-        "Obsidian customization",
-        "Workflow automation",
-        "Personal knowledge management"
       ]
     },
     {
@@ -660,92 +851,6 @@
         "Custom productivity tooling"
       ],
       "listImage": "/images/icons/resume-atelier.png",
-      "listImageFit": "contain"
-    },
-    {
-      "slug": "social-card-studio",
-      "title": "Social Card Studio",
-      "tagline": "Design · Content · Automation · Social Media",
-      "description": "A focused tool for producing consistent social graphics quickly.",
-      "image": "https://ai.hamednouri.com/images/work/social-card-studio-thumbnail.jpg",
-      "imageFit": "cover",
-      "types": [
-        "Project"
-      ],
-      "categories": [
-        "Creative Tools",
-        "Automation"
-      ],
-      "companies": [],
-      "minor": true,
-      "solution": [
-        "Repeatedly creating similar social graphics in general-purpose design software adds unnecessary setup and formatting work. I built a focused interface around the specific elements needed for social cards, reducing repetitive design work while maintaining visual consistency."
-      ],
-      "highlights": [
-        "Social graphics",
-        "Content production",
-        "Reusable layouts",
-        "Visual consistency",
-        "Workflow acceleration"
-      ],
-      "listImage": "/images/icons/social-card-studio.png",
-      "listImageFit": "contain"
-    },
-    {
-      "slug": "portfolio-card-studio",
-      "title": "Portfolio Card Studio",
-      "tagline": "Portfolio · Design · Automation · Content",
-      "description": "Generate consistent visual cards for showcasing projects.",
-      "image": "https://ai.hamednouri.com/images/work/portfolio-card-studio-thumbnail.jpg",
-      "imageFit": "cover",
-      "types": [
-        "Project"
-      ],
-      "categories": [
-        "Creative Tools",
-        "Automation"
-      ],
-      "companies": [],
-      "minor": true,
-      "solution": [
-        "A large project portfolio needs visual consistency, but manually recreating layouts for every project wastes time. I built a dedicated card-generation tool around my portfolio's visual system so project graphics can be produced faster while retaining a consistent structure."
-      ],
-      "highlights": [
-        "Portfolio automation",
-        "Reusable layouts",
-        "Visual consistency",
-        "Content production",
-        "Purpose-built tooling"
-      ],
-      "listImage": "/images/icons/portfolio-card-studio.png",
-      "listImageFit": "contain"
-    },
-    {
-      "slug": "banner-studio",
-      "title": "Banner Studio",
-      "tagline": "Design · Automation · Content Tools",
-      "description": "A focused design utility for quickly generating consistent banners.",
-      "image": "https://ai.hamednouri.com/images/work/banner-studio-thumbnail.jpg",
-      "imageFit": "cover",
-      "types": [
-        "Project"
-      ],
-      "categories": [
-        "Creative Tools",
-        "Automation"
-      ],
-      "companies": [],
-      "minor": true,
-      "solution": [
-        "Instead of repeatedly rebuilding layouts in a full design application, I created a dedicated interface for the banner-production workflow."
-      ],
-      "highlights": [
-        "Banner generation",
-        "Reusable layouts",
-        "Design automation",
-        "Faster content production"
-      ],
-      "listImage": "/images/icons/banner-studio.png",
       "listImageFit": "contain"
     },
     {
@@ -1042,34 +1147,6 @@
       "listImageFit": "contain"
     },
     {
-      "slug": "ka-blam-formatter",
-      "title": "Ka-Blam Formatter",
-      "tagline": "Publishing · Formatting · Automation",
-      "description": "Automates repetitive formatting work for print publishing.",
-      "image": "https://ai.hamednouri.com/images/work/ka-blam-formatter-thumbnail.jpg",
-      "imageFit": "cover",
-      "types": [
-        "Project"
-      ],
-      "categories": [
-        "Publishing",
-        "Automation"
-      ],
-      "companies": [],
-      "minor": true,
-      "solution": [
-        "Print production involves exact formatting requirements and repetitive preparation steps. I built a focused formatting tool to reduce repetitive manual work and make output more consistent."
-      ],
-      "highlights": [
-        "Publishing workflow",
-        "Automated formatting",
-        "Print preparation",
-        "Production tooling"
-      ],
-      "listImage": "/images/icons/ka-blam-formatter.png",
-      "listImageFit": "contain"
-    },
-    {
       "slug": "imessage-backup-tool",
       "title": "iMessage Backup Tool",
       "tagline": "iMessage · Data · Backup · macOS",
@@ -1211,68 +1288,6 @@
         "Low-friction interface"
       ],
       "listImage": "/images/icons/capture-bar.png",
-      "listImageFit": "contain"
-    },
-    {
-      "slug": "profilelauncher",
-      "title": "ProfileLauncher",
-      "tagline": "Browser · Productivity · macOS · Utility",
-      "description": "Launch the right browser environment for the right context.",
-      "image": "https://ai.hamednouri.com/images/work/profilelauncher-thumbnail.jpg",
-      "imageFit": "cover",
-      "types": [
-        "Project"
-      ],
-      "categories": [
-        "macOS",
-        "Automation"
-      ],
-      "companies": [],
-      "minor": true,
-      "solution": [
-        "Multiple accounts and browser contexts create unnecessary friction when switching between different kinds of work. I built a lightweight launcher around those contexts so the correct environment can be opened directly."
-      ],
-      "highlights": [
-        "Browser profiles",
-        "Context switching",
-        "macOS",
-        "Workflow acceleration"
-      ],
-      "listImage": "/images/icons/profilelauncher.png",
-      "listImageFit": "contain"
-    },
-    {
-      "slug": "brand-aid",
-      "title": "Brand Aid",
-      "tagline": "Design Automation · macOS · Branding",
-      "description": "A native macOS app for generating consistently branded graphics—base image, logo, crop, and placement in one pass.",
-      "image": "https://ai.hamednouri.com/images/work/brand-aid-app-thumbnail.jpg",
-      "imageFit": "cover",
-      "types": [
-        "Project"
-      ],
-      "categories": [
-        "Creative Tools",
-        "Automation",
-        "macOS"
-      ],
-      "companies": [],
-      "problem": [
-        "Every project on this site, and every social card announcing one, needed the same branding treatment: a base image, my logo placed consistently, cropped to the right ratio. Doing that by hand in a general design tool for dozens of images added repetitive setup work every time."
-      ],
-      "solution": [
-        "I built Brand Aid, a native macOS app that takes a base image, overlays a logo at a configurable size and position, crops to a chosen aspect ratio, and exports it ready to use.",
-        "It's what generated most of the thumbnails across this project archive, including its own."
-      ],
-      "highlights": [
-        "Base image + logo compositing",
-        "Configurable crop ratios",
-        "Logo size & placement controls",
-        "One-click export",
-        "Native macOS app",
-        "Used to produce this site's own thumbnails"
-      ],
-      "listImage": "/images/icons/brand-aid.png",
       "listImageFit": "contain"
     },
     {

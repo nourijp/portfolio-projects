@@ -19,6 +19,7 @@ export type ProjectEntry = {
   categories: string[];
   companies?: string[];
   minor?: boolean;
+  featured?: boolean;
   draft?: boolean;
   badge?: string;
   externalUrl?: string;

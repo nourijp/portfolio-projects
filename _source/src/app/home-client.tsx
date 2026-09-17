@@ -75,10 +75,9 @@ export default function HomeClient() {
         selectedCompanies.length === 0 || (e.companies || []).some((c) => selectedCompanies.includes(c));
       return typeMatch && catMatch && companyMatch;
     });
-    // Prominence sort, not a topic filter: entries without a real (non-
-    // placeholder) thumbnail sink below every entry that has custom art.
-    // Single criterion for now -- minor/Networking no longer add their own
-    // separate demotion once this already applies.
+    // Prominence sort, not a topic filter. Manually featured entries always
+    // lead (in their original array order), then everything with a real
+    // (non-placeholder) thumbnail, then everything else.
     const hasCustomThumbnail = (e: ProjectEntry) => {
       const img = e.galleryImage || e.image || "";
       return (
@@ -87,7 +86,8 @@ export default function HomeClient() {
         !/work-img-\d/.test(img)
       );
     };
-    const demotionScore = (e: ProjectEntry) => Number(!hasCustomThumbnail(e));
+    const demotionScore = (e: ProjectEntry) =>
+      Number(!e.featured) * 2 + Number(!hasCustomThumbnail(e));
     return [...matches].sort((a, b) => demotionScore(a) - demotionScore(b));
   }, [selectedTypes, selectedCategories, selectedCompanies]);
 
