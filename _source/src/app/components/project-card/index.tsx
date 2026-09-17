@@ -10,9 +10,11 @@ export type ProjectEntry = {
   image: string;
   galleryImage?: string;
   listImage?: string;
+  detailImage?: string;
   imageFit?: "cover" | "contain";
   galleryImageFit?: "cover" | "contain";
   listImageFit?: "cover" | "contain";
+  detailImageFit?: "cover" | "contain";
   types: string[];
   categories: string[];
   companies?: string[];

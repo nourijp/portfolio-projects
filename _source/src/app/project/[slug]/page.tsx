@@ -37,7 +37,11 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
   const entry = localEntries.find((e) => e.slug === slug);
   if (!entry) notFound();
 
-  const fitClass = entry.imageFit === "contain" ? "bg-black" : "bg-softGray";
+  // A detail page can show a different (e.g. higher-res, bezel-free) image
+  // than the gallery card -- same override pattern as galleryImage/listImage.
+  const detailImg = entry.detailImage || entry.image;
+  const detailImgFit = entry.detailImage ? entry.detailImageFit : entry.imageFit;
+  const fitClass = detailImgFit === "contain" ? "bg-black" : "bg-softGray";
 
   return (
     <main className="min-h-screen bg-white pt-28 md:pt-36 pb-24">
@@ -67,9 +71,9 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         <div className={`rounded-2xl overflow-hidden mb-14 ${fitClass}`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={entry.image}
+            src={detailImg}
             alt={entry.title}
-            className={`w-full h-72 md:h-96 ${entry.imageFit === "contain" ? "object-contain" : "object-cover"}`}
+            className={`w-full h-72 md:h-96 ${detailImgFit === "contain" ? "object-contain" : "object-cover"}`}
           />
         </div>
 
