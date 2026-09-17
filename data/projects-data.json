@@ -227,8 +227,8 @@
       "title": "Custom Obsidian Planning System",
       "tagline": "Obsidian · Calendar · Bases",
       "description": "Projects, tasks, habits, meals, and events in one connected workspace.",
-      "image": "/images/placeholder-in-progress.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-1.svg",
+      "imageFit": "cover",
       "badge": "In Progress",
       "types": [
         "Project"
@@ -260,8 +260,8 @@
       "title": "Seamless DSLR-to-Server Photo Ingest",
       "tagline": "FTP · EXIF Automation · Mac Mini Server",
       "description": "An FTP pipeline that captures photos straight from my DSLR and automatically organizes them into folders on my home server.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-2.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -375,7 +375,7 @@
       ],
       "categories": [
         "AI",
-        "Japanese",
+        "Language",
         "Automation"
       ],
       "companies": [],
@@ -426,8 +426,8 @@
       "title": "Proxy Phase — Project Lifecycle System",
       "tagline": "Productivity · Project Management · Obsidian · Automation",
       "description": "Structured project phases that turn ambiguous work into actionable next steps.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-3.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -492,14 +492,14 @@
       "title": "WaniKani for Obsidian",
       "tagline": "Japanese · Obsidian · API · Education",
       "description": "Japanese-learning progress and reviews integrated directly into Obsidian.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-4.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
       "categories": [
         "Obsidian",
-        "Japanese",
+        "Language",
         "Automation"
       ],
       "companies": [],
@@ -524,14 +524,14 @@
       "title": "Bunpro Reviews for Obsidian",
       "tagline": "Reverse Engineering · API · Japanese · Obsidian",
       "description": "Reverse-engineered an undocumented integration to bring grammar reviews into Obsidian.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-5.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
       "categories": [
         "Obsidian",
-        "Japanese",
+        "Language",
         "Automation"
       ],
       "companies": [],
@@ -556,8 +556,8 @@
       "title": "Proxy Policy — Rule-Based Automation",
       "tagline": "Automation · Obsidian · Rules Engine · Productivity",
       "description": "A policy layer that defines how my productivity system should behave.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-6.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -587,8 +587,8 @@
       "title": "Local-First Commonplace System",
       "tagline": "Local-First · Knowledge Management · Obsidian · E-Ink",
       "description": "Save once. Organize, preserve, and resurface information across devices.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-7.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -622,15 +622,15 @@
       "title": "Proxy Study",
       "tagline": "Learning · Productivity · Obsidian · Japanese",
       "description": "A Japanese study tool I rebuilt from scratch after the iOS app I relied on disappeared from the App Store.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-8.svg",
+      "imageFit": "cover",
       "badge": "In Progress",
       "types": [
         "Project"
       ],
       "categories": [
         "Obsidian",
-        "Japanese"
+        "Language"
       ],
       "companies": [],
       "problem": [
@@ -651,8 +651,8 @@
       "title": "Resume Atelier",
       "tagline": "Career Tools · Automation · Documents · Product Design",
       "description": "A purpose-built workspace for creating and managing tailored resumes.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-9.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -758,8 +758,8 @@
       "title": "Kindle Screensaver Studio",
       "tagline": "Kindle · Images · Automation · Utility",
       "description": "A purpose-built workflow for preparing custom Kindle screensaver artwork.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-10.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -784,8 +784,8 @@
       "title": "Word-to-Anki",
       "tagline": "Education · Anki · Automation · Language Learning",
       "description": "Turn vocabulary into study-ready Anki material with less manual work.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-11.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -809,8 +809,8 @@
       "title": "Save Safari Tabs",
       "tagline": "Safari · Productivity · Automation",
       "description": "Preserve groups of browser tabs without leaving dozens of pages open.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-12.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -835,8 +835,8 @@
       "title": "TimewBar",
       "tagline": "macOS · Time Tracking · Productivity",
       "description": "Time tracking where I can see it without opening another application.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-1.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -861,8 +861,8 @@
       "title": "Video Notes",
       "tagline": "Video · Notes · Knowledge Management",
       "description": "A workflow for turning video consumption into usable notes.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-2.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -887,8 +887,8 @@
       "title": "Lulu Book Pipeline",
       "tagline": "Publishing · Books · Automation · Production",
       "description": "A repeatable production pipeline for preparing books for Lulu publishing.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-3.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -916,8 +916,8 @@
       "title": "Cycle",
       "tagline": "macOS · Window Switching · Utility",
       "description": "A single-key window switcher and app launcher, forked and rebuilt from an existing Alt-Tab replacement.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-4.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -947,8 +947,8 @@
       "title": "Dash",
       "tagline": "Dashboard · Monitoring · macOS",
       "description": "A dashboard for viewing all my custom apps and tools and confirming everything on the network is running correctly.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-5.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -976,8 +976,8 @@
       "title": "Both Ears",
       "tagline": "Audio · macOS · Utility",
       "description": "One-ear, mono, noisy, or quiet audio in — clean, hearable stereo out.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-6.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1002,8 +1002,8 @@
       "title": "RAM Watchdog",
       "tagline": "macOS · Monitoring · Automation · System Utility",
       "description": "A lightweight watchdog for keeping an eye on memory usage.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-7.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1055,8 +1055,8 @@
       "title": "iMessage Backup Tool",
       "tagline": "iMessage · Data · Backup · macOS",
       "description": "A custom workflow for preserving iMessage data outside the standard interface.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-8.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1081,8 +1081,8 @@
       "title": "iMessage Archive Viewer",
       "tagline": "iMessage · Archive · Search · macOS",
       "description": "Browse archived conversations outside the original messaging application.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-9.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1107,8 +1107,8 @@
       "title": "iMessage Auto Reply",
       "tagline": "Messaging · Automation · macOS",
       "description": "Custom automation for responding to specific messaging workflows.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-10.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1133,8 +1133,8 @@
       "title": "WGStatusBar",
       "tagline": "Networking · macOS · WireGuard · Utility",
       "description": "WireGuard status and controls where they're immediately accessible.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-11.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1160,8 +1160,8 @@
       "title": "Capture Bar",
       "tagline": "Capture · Productivity · macOS · Automation",
       "description": "A persistent capture surface for getting information into my system quickly.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-12.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1247,8 +1247,8 @@
       "title": "Home NAS Deployment",
       "tagline": "NAS · Storage · Infrastructure",
       "description": "Deployed and configured a home NAS as the backbone of my network's storage, sharing, and self-hosting.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-1.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1275,8 +1275,8 @@
       "title": "Smart Home System Design",
       "tagline": "Smart Home · Automation · Networking",
       "description": "Designed and integrated a smart home system across devices and protocols.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-2.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1300,8 +1300,8 @@
       "title": "Multi-User NAS Backup Management",
       "tagline": "Backups · NAS · Multi-Device",
       "description": "Managing automated backups for multiple people's multiple devices across the home network.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-3.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1328,8 +1328,8 @@
       "title": "WireGuard VPN for Remote NAS Access",
       "tagline": "WireGuard · VPN · Remote Access",
       "description": "Built WireGuard VPN access into the network so the NAS and its services are reachable securely from anywhere.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-4.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1357,8 +1357,8 @@
       "title": "Cloudflare Tunnel File & Photo Sharing",
       "tagline": "Cloudflare Tunnel · Sharing · NAS",
       "description": "Connected NAS photo and file sharing to the outside world through a Cloudflare Tunnel, without exposing the NAS directly.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-5.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1385,8 +1385,8 @@
       "title": "Self-Hosted Community Platform (Fluxer)",
       "tagline": "Fluxer · Self-Hosted · Community",
       "description": "Deployed Fluxer, a Discord-like community platform, self-hosted through the NAS.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-6.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1409,8 +1409,8 @@
       "title": "Self-Hosted LMS Deployment",
       "tagline": "LMS · Self-Hosted · Education",
       "description": "Deployed a self-hosted learning management system through the NAS.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-7.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1433,8 +1433,8 @@
       "title": "Flarum Forum Deployment",
       "tagline": "Flarum · Self-Hosted · Community",
       "description": "Deployed and self-host a Flarum discussion forum.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-8.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1457,8 +1457,8 @@
       "title": "WordPress Staging Environment",
       "tagline": "WordPress · Staging · Server Administration",
       "description": "Run and continually improve a WordPress staging site on a separate server from the NAS.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-9.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1481,8 +1481,8 @@
       "title": "Custom Firewall & Router (OPNsense)",
       "tagline": "OPNsense · Firewall · Networking",
       "description": "Installed and configured OPNsense as a custom firewall and router for the home network.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-10.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1509,8 +1509,8 @@
       "title": "Calibre RSS-to-Kindle News Delivery",
       "tagline": "Calibre · RSS · Kindle · Automation",
       "description": "An internal network pipeline that pulls RSS news through Calibre and delivers it straight to Kindles.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-11.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1534,8 +1534,8 @@
       "title": "Self-Hosted NAS Surveillance System",
       "tagline": "Surveillance · NAS · Self-Hosted",
       "description": "Home camera surveillance running through the NAS, with no subscription required.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-12.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1561,8 +1561,8 @@
       "title": "Custom Desktop Builds for Clients",
       "tagline": "Hardware · PC Building · Client Work",
       "description": "Custom-built multiple desktop computers for clients.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-1.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1586,8 +1586,8 @@
       "title": "Vertical Crop",
       "tagline": "Video · Automation · Client Tooling",
       "description": "Converts horizontal video to vertical video instantly — drag, drop, done.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-2.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1615,8 +1615,8 @@
       "title": "Still Grabber",
       "tagline": "Video · Thumbnails · Social Media",
       "description": "Extracts a set number of still frames from a video, ready to use as social media thumbnails.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-3.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1643,8 +1643,8 @@
       "title": "Pinnacle Thumbnail Maker",
       "tagline": "Design Automation · Social Media · Client Branding",
       "description": "A specific thumbnail-design tool for a client's social media, with saved layouts per post type.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-4.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1674,8 +1674,8 @@
       "title": "Caption Pop",
       "tagline": "Local AI · Transcription · Captions",
       "description": "Drag-and-drop video captioning powered by a local transcription model — no subscription required.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-5.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1705,8 +1705,8 @@
       "title": "BGM Mixer",
       "tagline": "Audio · Video · Automation",
       "description": "Drag-and-drop background music mixing — random or chosen tracks added to video instantly.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-6.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1733,8 +1733,8 @@
       "title": "Pinnacle Photo Brander",
       "tagline": "Branding · Social Media · Client Tooling",
       "description": "Adds a client's specific branding to photos for their social media.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-7.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1760,8 +1760,8 @@
       "title": "Video Patch",
       "tagline": "Video Editing · Automation · Client Tooling",
       "description": "Covers a logo, caption, or burned-in text on video with a solid colour patch.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-8.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
@@ -1788,8 +1788,8 @@
       "title": "Still Motion",
       "tagline": "Video · Automation · Content Production",
       "description": "Turns a photo into a vertical 1080×1920 video with slow motion and captions.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "/images/gradients/gradient-9.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
