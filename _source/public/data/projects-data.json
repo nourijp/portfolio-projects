@@ -217,6 +217,32 @@
       ]
     },
     {
+      "slug": "dslr-ftp-photo-ingest",
+      "title": "Seamless DSLR-to-Server Photo Ingest",
+      "tagline": "FTP · EXIF Automation · Mac Mini Server",
+      "description": "An FTP pipeline that captures photos straight from my DSLR and automatically organizes them into folders on my home server.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": ["Project"],
+      "categories": ["Product Development"],
+      "companies": [],
+      "problem": [
+        "Getting photos off a DSLR and onto my server meant connecting a cable or card reader, then manually sorting the files—extra steps that added friction to something that should be instant.",
+        "Even AirDrop, while wireless, just dumps everything into one folder instead of organizing by shoot, date, or camera."
+      ],
+      "solution": [
+        "I set up an FTP server on my Mac mini and configured my DSLR to upload directly over Wi-Fi the moment I take a photo.",
+        "Incoming photos are automatically picked up, organized into folders based on their metadata, and filed exactly where I want them—no cable, card reader, or AirDrop step required."
+      ],
+      "highlights": [
+        "Wireless DSLR-to-server upload",
+        "FTP ingest pipeline",
+        "Automatic metadata-based organization",
+        "Zero manual import step",
+        "Runs on a home Mac mini server"
+      ]
+    },
+    {
       "slug": "26-site-deployment",
       "title": "34-Site Deployment System",
       "tagline": "Next.js · GitHub · Cloudflare · Automation",
