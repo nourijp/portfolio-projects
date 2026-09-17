@@ -117,7 +117,7 @@ const FilterBar = ({
         ))}
       </div>
 
-      {allCompanies.length > 0 && (
+      {allCompanies.length > 1 && (
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-sm text-secondary mr-1">Company</span>
           {allCompanies.map((c) => (
