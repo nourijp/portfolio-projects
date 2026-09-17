@@ -1582,6 +1582,233 @@
       ]
     },
     {
+      "slug": "vertical-crop",
+      "title": "Vertical Crop",
+      "tagline": "Video · Automation · Client Tooling",
+      "description": "Converts horizontal video to vertical video instantly — drag, drop, done.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Creative Tools",
+        "Automation"
+      ],
+      "companies": [],
+      "problem": [
+        "Client videos needed to go from horizontal to vertical format for social media, and reframing each clip by hand in a video editor was slow and repetitive."
+      ],
+      "solution": [
+        "I built Vertical Crop, a drag-and-drop app that converts horizontal video to a centered vertical crop instantly -- no editor, no manual framing, just drop the file and get a ready-to-post vertical video.",
+        "This is the final iteration after two earlier versions refined the cropping approach."
+      ],
+      "highlights": [
+        "Drag-and-drop conversion",
+        "Horizontal to vertical crop",
+        "Instant output",
+        "Final iteration of an evolving tool"
+      ]
+    },
+    {
+      "slug": "still-grabber",
+      "title": "Still Grabber",
+      "tagline": "Video · Thumbnails · Social Media",
+      "description": "Extracts a set number of still frames from a video, ready to use as social media thumbnails.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Creative Tools",
+        "Automation"
+      ],
+      "companies": [],
+      "problem": [
+        "Social media analysts needed still images pulled from video to use as post thumbnails, which meant manually scrubbing through footage and exporting frames one at a time."
+      ],
+      "solution": [
+        "I built Still Grabber: set a number, drag and drop a video, and it extracts that many evenly-spaced still images automatically -- ready for a social media analyst to use directly as thumbnails."
+      ],
+      "highlights": [
+        "Configurable frame count",
+        "Drag-and-drop video input",
+        "Automatic still extraction",
+        "Built for social thumbnail workflows"
+      ]
+    },
+    {
+      "slug": "pinnacle-thumbnail-maker",
+      "title": "Pinnacle Thumbnail Maker",
+      "tagline": "Design Automation · Social Media · Client Branding",
+      "description": "A specific thumbnail-design tool for a client's social media, with saved layouts per post type.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Creative Tools",
+        "Automation"
+      ],
+      "companies": [
+        "Pinnacle Prep School"
+      ],
+      "problem": [
+        "Different post types needed different thumbnail designs -- different text and colour placement -- and rebuilding each layout by hand every time was slow and inconsistent."
+      ],
+      "solution": [
+        "I built a thumbnail-design tool specific to the client's social media, with layouts saved per post type.",
+        "Drop in a still image, paste in minimal text, and it produces an on-brand thumbnail matching that post type's design."
+      ],
+      "highlights": [
+        "Per-post-type saved layouts",
+        "Drag-and-drop still image input",
+        "Minimal text entry",
+        "Consistent on-brand output"
+      ]
+    },
+    {
+      "slug": "caption-pop",
+      "title": "Caption Pop",
+      "tagline": "Local AI · Transcription · Captions",
+      "description": "Drag-and-drop video captioning powered by a local transcription model — no subscription required.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "AI",
+        "Creative Tools",
+        "Automation"
+      ],
+      "companies": [],
+      "problem": [
+        "Popular auto-captioning tools get near-perfect results but come as ongoing subscriptions, and even the good ones need occasional timing or text corrections."
+      ],
+      "solution": [
+        "I built Caption Pop: drop in a video, and it connects to a local audio-transcription LLM to transcribe it and burn the captions directly onto the video.",
+        "Results are nearly perfect, and where they're not, the tool makes timing and text adjustments easy -- all without a recurring subscription."
+      ],
+      "highlights": [
+        "Local transcription model",
+        "Drag-and-drop captioning",
+        "Editable timing & text",
+        "No subscription cost",
+        "Near-perfect accuracy"
+      ]
+    },
+    {
+      "slug": "bgm-mixer",
+      "title": "BGM Mixer",
+      "tagline": "Audio · Video · Automation",
+      "description": "Drag-and-drop background music mixing — random or chosen tracks added to video instantly.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Creative Tools",
+        "Automation"
+      ],
+      "companies": [],
+      "problem": [
+        "Adding background music to a batch of videos one at a time in an editor was slow when the music just needed to come from a standing set of approved tracks."
+      ],
+      "solution": [
+        "I built BGM Mixer: drop in a video and a track is added from a pre-selected folder of audio, either chosen at random or picked specifically, giving instant background music without opening an editor."
+      ],
+      "highlights": [
+        "Drag-and-drop video input",
+        "Random or chosen track selection",
+        "Curated audio folder",
+        "Instant background music"
+      ]
+    },
+    {
+      "slug": "pinnacle-photo-brander",
+      "title": "Pinnacle Photo Brander",
+      "tagline": "Branding · Social Media · Client Tooling",
+      "description": "Adds a client's specific branding to photos for their social media.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Creative Tools",
+        "Automation"
+      ],
+      "companies": [
+        "Pinnacle Prep School"
+      ],
+      "minor": true,
+      "solution": [
+        "A simple app that applies the client's specific branding to photos before they go out on social media."
+      ],
+      "highlights": [
+        "Automated photo branding",
+        "Client-specific design",
+        "Social media ready output"
+      ]
+    },
+    {
+      "slug": "video-patch",
+      "title": "Video Patch",
+      "tagline": "Video Editing · Automation · Client Tooling",
+      "description": "Covers a logo, caption, or burned-in text on video with a solid colour patch.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Creative Tools",
+        "Automation"
+      ],
+      "companies": [],
+      "problem": [
+        "A client had videos that needed part of the frame cut or hidden -- a logo, caption, or burned-in text that shouldn't be there -- without re-editing the whole video."
+      ],
+      "solution": [
+        "I built Video Patch to do basic video touch-ups: it covers a logo, caption, or burned-in text with a solid colour patch, positioned and timed to exactly where it's needed."
+      ],
+      "highlights": [
+        "Covers unwanted logos/captions/text",
+        "Solid colour patching",
+        "Client video touch-ups",
+        "Targeted, minimal editing"
+      ]
+    },
+    {
+      "slug": "still-motion",
+      "title": "Still Motion",
+      "tagline": "Video · Automation · Content Production",
+      "description": "Turns a photo into a vertical 1080×1920 video with slow motion and captions.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Creative Tools",
+        "Automation"
+      ],
+      "companies": [],
+      "solution": [
+        "I built Still Motion to turn a single photo into a vertical 1080×1920 video with slow Ken Burns-style motion and script-driven captions -- ready to post without opening a video editor."
+      ],
+      "highlights": [
+        "Photo-to-video conversion",
+        "Vertical 1080×1920 output",
+        "Slow-motion (Ken Burns) effect",
+        "Script-driven captions"
+      ]
+    },
+    {
       "slug": "example-accomplishment",
       "title": "[Example] Accomplishment Placeholder",
       "tagline": "Replace with a real accomplishment",
