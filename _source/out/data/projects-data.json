@@ -189,6 +189,34 @@
       ]
     },
     {
+      "slug": "obsidian-planning-system",
+      "title": "Custom Obsidian Planning System",
+      "tagline": "Obsidian · Calendar · Bases",
+      "description": "Projects, tasks, habits, meals, and events in one connected workspace.",
+      "image": "/images/placeholder-in-progress.svg",
+      "imageFit": "contain",
+      "badge": "In Progress",
+      "types": ["Project"],
+      "categories": ["Product Development"],
+      "companies": [],
+      "problem": [
+        "My projects, tasks, habits, meals, and events lived in separate views and mental models inside Obsidian, so planning meant switching between disconnected systems instead of working from one place."
+      ],
+      "solution": [
+        "I extended Obsidian's Calendar and Bases plugins into a connected planning system: color-coded content types, the ability to add items directly from calendar dates, dedicated habit tracking and meal planning, and filtered database views across tasks, events, and projects.",
+        "The interface itself is the point—it's a customized system built around how I actually plan, not a generic template."
+      ],
+      "highlights": [
+        "Calendar interface",
+        "Add items directly from dates",
+        "Color-coded content types",
+        "Tasks vs. events vs. projects",
+        "Habit tracking",
+        "Meal planning",
+        "Filtered database views"
+      ]
+    },
+    {
       "slug": "26-site-deployment",
       "title": "34-Site Deployment System",
       "tagline": "Next.js · GitHub · Cloudflare · Automation",
@@ -199,7 +227,6 @@
       "types": ["Project"],
       "categories": ["Product Development"],
       "companies": [],
-      "minor": true,
       "problem": [
         "Maintaining dozens of small project and portfolio sites creates repetitive infrastructure work.",
         "Every new site normally requires repository setup, deployment configuration, DNS records, subdomains, and ongoing maintenance."
