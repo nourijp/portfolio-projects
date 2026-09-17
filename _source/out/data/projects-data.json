@@ -778,7 +778,7 @@
     },
     {
       "slug": "word-to-anki",
-      "title": "Word-to-Anki",
+      "title": "AI Multilingual Learning System",
       "tagline": "AI · Education · Anki · Language Learning",
       "description": "An AI-assisted pipeline that classifies vocabulary and grammar items, generates context-rich flashcard content, and turns it into study-ready Anki decks with less manual work.",
       "image": "/images/gradients/gradient-11.svg",
