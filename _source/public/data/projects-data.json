@@ -99,6 +99,8 @@
       "description": "A calm, always-on interface that turns information from my Obsidian knowledge system into glanceable screens for tasks, projects, events, notes, and daily context.",
       "image": "https://ai.hamednouri.com/images/work/work-img-trmnl.jpg",
       "imageFit": "contain",
+      "galleryImage": "https://ai.hamednouri.com/images/work/work-img-trmnl-preview.jpg",
+      "galleryImageFit": "cover",
       "types": ["Project"],
       "categories": ["Product Development", "AI"],
       "companies": [],

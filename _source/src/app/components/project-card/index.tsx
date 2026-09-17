@@ -8,8 +8,10 @@ export type ProjectEntry = {
   tagline: string;
   description: string;
   image: string;
+  galleryImage?: string;
   listImage?: string;
   imageFit?: "cover" | "contain";
+  galleryImageFit?: "cover" | "contain";
   listImageFit?: "cover" | "contain";
   types: string[];
   categories: string[];
@@ -22,8 +24,6 @@ export type ProjectEntry = {
 };
 
 function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "list" }) {
-  const fitClass = entry.imageFit === "contain" ? "object-contain bg-black" : "object-cover bg-softGray";
-
   if (view === "list") {
     // A testimonial (or any entry) can show a different image in list view
     // than in gallery view -- e.g. a designed quote graphic in the gallery,
@@ -55,14 +55,20 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
     );
   }
 
+  // A gallery-card thumbnail can use a different (e.g. pre-cropped, no
+  // letterboxing) image than the full detail-page banner.
+  const galleryImg = entry.galleryImage || entry.image;
+  const galleryImgFit = entry.galleryImage ? entry.galleryImageFit : entry.imageFit;
+  const galleryFitClass = galleryImgFit === "contain" ? "object-contain bg-black" : "object-cover bg-softGray";
+
   return (
     <div className="group flex flex-col gap-3 break-inside-avoid mb-6">
-      <div className={`relative rounded-xl overflow-hidden ${fitClass}`}>
+      <div className={`relative rounded-xl overflow-hidden ${galleryFitClass}`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={entry.image}
+          src={galleryImg}
           alt={entry.title}
-          className={`w-full h-auto ${entry.imageFit === "contain" ? "object-contain" : "object-cover"} transition-transform duration-300 group-hover:scale-[1.02]`}
+          className={`w-full h-auto ${galleryImgFit === "contain" ? "object-contain" : "object-cover"} transition-transform duration-300 group-hover:scale-[1.02]`}
         />
         <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors" />
       </div>
