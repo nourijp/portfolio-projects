@@ -75,9 +75,21 @@ export default function HomeClient() {
         selectedCompanies.length === 0 || (e.companies || []).some((c) => selectedCompanies.includes(c));
       return typeMatch && catMatch && companyMatch;
     });
-    // Minor entries (small/one-off tools) sort to the end, regardless of
-    // active filters -- a prominence signal, not a topic to filter by.
-    return [...matches].sort((a, b) => Number(!!a.minor) - Number(!!b.minor));
+    // Prominence sort, not a topic filter: entries without a real (non-
+    // placeholder) thumbnail sink below ones that have custom art, and
+    // Networking-category entries sink slightly further below that --
+    // both weighted below the minor flag, which always sorts last.
+    const hasCustomThumbnail = (e: ProjectEntry) => {
+      const img = e.galleryImage || e.image || "";
+      return (
+        !img.includes("/images/gradients/") &&
+        !img.includes("placeholder") &&
+        !/work-img-\d/.test(img)
+      );
+    };
+    const demotionScore = (e: ProjectEntry) =>
+      Number(!!e.minor) * 4 + Number(!hasCustomThumbnail(e)) * 2 + Number(e.categories.includes("Networking"));
+    return [...matches].sort((a, b) => demotionScore(a) - demotionScore(b));
   }, [selectedTypes, selectedCategories, selectedCompanies]);
 
   const setType = (t: string) => setSelectedTypes([t]);
