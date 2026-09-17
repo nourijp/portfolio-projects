@@ -1217,8 +1217,14 @@
       "description": "A native macOS app for generating consistently branded graphics—base image, logo, crop, and placement in one pass.",
       "image": "https://ai.hamednouri.com/images/work/brand-aid-app-thumbnail.jpg",
       "imageFit": "cover",
-      "types": ["Project"],
-      "categories": ["Creative Tools", "Automation", "macOS"],
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Creative Tools",
+        "Automation",
+        "macOS"
+      ],
       "companies": [],
       "problem": [
         "Every project on this site, and every social card announcing one, needed the same branding treatment: a base image, my logo placed consistently, cropped to the right ratio. Doing that by hand in a general design tool for dozens of images added repetitive setup work every time."
@@ -1234,6 +1240,345 @@
         "One-click export",
         "Native macOS app",
         "Used to produce this site's own thumbnails"
+      ]
+    },
+    {
+      "slug": "home-nas-deployment",
+      "title": "Home NAS Deployment",
+      "tagline": "NAS · Storage · Infrastructure",
+      "description": "Deployed and configured a home NAS as the backbone of my network's storage, sharing, and self-hosting.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Networking",
+        "Hardware"
+      ],
+      "companies": [],
+      "problem": [
+        "I needed a reliable, centralized place to store, back up, and serve files, photos, and self-hosted services across my home network instead of scattering them across individual machines."
+      ],
+      "solution": [
+        "I deployed and configured a NAS as the storage and services backbone for my home network -- the foundation that my backup, sharing, surveillance, and self-hosted app projects all run on."
+      ],
+      "highlights": [
+        "NAS deployment & configuration",
+        "Centralized storage",
+        "Foundation for self-hosted services",
+        "Home network infrastructure"
+      ]
+    },
+    {
+      "slug": "smart-home-system-design",
+      "title": "Smart Home System Design",
+      "tagline": "Smart Home · Automation · Networking",
+      "description": "Designed and integrated a smart home system across devices and protocols.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Networking",
+        "Automation",
+        "Hardware"
+      ],
+      "companies": [],
+      "solution": [
+        "I designed and set up a smart home system, integrating devices across my home network into one connected setup."
+      ],
+      "highlights": [
+        "Smart home integration",
+        "Device automation",
+        "Home networking"
+      ]
+    },
+    {
+      "slug": "multi-user-nas-backup",
+      "title": "Multi-User NAS Backup Management",
+      "tagline": "Backups · NAS · Multi-Device",
+      "description": "Managing automated backups for multiple people's multiple devices across the home network.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Networking",
+        "Automation"
+      ],
+      "companies": [],
+      "problem": [
+        "Photos and files live across many devices belonging to different people in the household, and losing any of it was a real risk without a consistent backup system."
+      ],
+      "solution": [
+        "I set up and maintain NAS-based backup coverage for multiple people's multiple devices, making sure everything gets backed up automatically rather than relying on each person to do it themselves."
+      ],
+      "highlights": [
+        "Multi-user backup coverage",
+        "Multi-device support",
+        "Automated backups",
+        "NAS-based storage"
+      ]
+    },
+    {
+      "slug": "wireguard-vpn-remote-nas-access",
+      "title": "WireGuard VPN for Remote NAS Access",
+      "tagline": "WireGuard · VPN · Remote Access",
+      "description": "Built WireGuard VPN access into the network so the NAS and its services are reachable securely from anywhere.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Networking",
+        "Automation"
+      ],
+      "companies": [],
+      "problem": [
+        "I wanted to reach my NAS and home services from outside the house without exposing them directly to the internet."
+      ],
+      "solution": [
+        "I built WireGuard VPN access into my network, so I can connect securely from an external location and reach the NAS and other home services as if I were on the local network.",
+        "See also WGStatusBar, the menu-bar client I built for checking connection status at a glance."
+      ],
+      "highlights": [
+        "WireGuard VPN",
+        "Secure remote access",
+        "No direct internet exposure",
+        "Home network infrastructure"
+      ]
+    },
+    {
+      "slug": "cloudflare-tunnel-file-sharing",
+      "title": "Cloudflare Tunnel File & Photo Sharing",
+      "tagline": "Cloudflare Tunnel · Sharing · NAS",
+      "description": "Connected NAS photo and file sharing to the outside world through a Cloudflare Tunnel, without exposing the NAS directly.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Networking",
+        "Automation"
+      ],
+      "companies": [],
+      "problem": [
+        "I wanted to share photos and files from my NAS with other people without opening ports on my router or exposing the NAS directly to the internet."
+      ],
+      "solution": [
+        "I connected the NAS's photo and file sharing systems through a Cloudflare Tunnel, so others can access shared content through a secure public link while the NAS itself stays off the open internet."
+      ],
+      "highlights": [
+        "Cloudflare Tunnel",
+        "Secure external sharing",
+        "No exposed ports",
+        "NAS photo & file sharing"
+      ]
+    },
+    {
+      "slug": "fluxer-community-site-nas",
+      "title": "Self-Hosted Community Platform (Fluxer)",
+      "tagline": "Fluxer · Self-Hosted · Community",
+      "description": "Deployed Fluxer, a Discord-like community platform, self-hosted through the NAS.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Networking",
+        "Automation"
+      ],
+      "companies": [],
+      "solution": [
+        "I deployed Fluxer, a self-hosted Discord-style community platform, running through my NAS infrastructure."
+      ],
+      "highlights": [
+        "Fluxer deployment",
+        "Self-hosted community platform",
+        "NAS-hosted service"
+      ]
+    },
+    {
+      "slug": "self-hosted-lms",
+      "title": "Self-Hosted LMS Deployment",
+      "tagline": "LMS · Self-Hosted · Education",
+      "description": "Deployed a self-hosted learning management system through the NAS.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Networking",
+        "Automation"
+      ],
+      "companies": [],
+      "solution": [
+        "I deployed a self-hosted LMS through my NAS infrastructure to run and manage online courses."
+      ],
+      "highlights": [
+        "LMS deployment",
+        "Self-hosted infrastructure",
+        "Course management"
+      ]
+    },
+    {
+      "slug": "flarum-forum-deployment",
+      "title": "Flarum Forum Deployment",
+      "tagline": "Flarum · Self-Hosted · Community",
+      "description": "Deployed and self-host a Flarum discussion forum.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Networking",
+        "Automation"
+      ],
+      "companies": [],
+      "solution": [
+        "I deployed a Flarum forum as a self-hosted discussion platform on my own infrastructure."
+      ],
+      "highlights": [
+        "Flarum deployment",
+        "Self-hosted forum",
+        "Community infrastructure"
+      ]
+    },
+    {
+      "slug": "wordpress-staging-environment",
+      "title": "WordPress Staging Environment",
+      "tagline": "WordPress · Staging · Server Administration",
+      "description": "Run and continually improve a WordPress staging site on a separate server from the NAS.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Networking",
+        "Automation"
+      ],
+      "companies": [],
+      "solution": [
+        "I run and maintain a WordPress staging environment on its own server, separate from the NAS, using it to test and improve a live WordPress site before changes go live."
+      ],
+      "highlights": [
+        "WordPress staging",
+        "Server administration",
+        "Pre-production testing"
+      ]
+    },
+    {
+      "slug": "opnsense-firewall-router",
+      "title": "Custom Firewall & Router (OPNsense)",
+      "tagline": "OPNsense · Firewall · Networking",
+      "description": "Installed and configured OPNsense as a custom firewall and router for the home network.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Networking",
+        "Hardware"
+      ],
+      "companies": [],
+      "problem": [
+        "A consumer router doesn't give the visibility or control needed to properly segment and secure a home network with many different devices and services."
+      ],
+      "solution": [
+        "I installed and configured OPNsense as a dedicated firewall/router, giving me VLAN segmentation, custom firewall rules, and full control over how traffic moves through my network."
+      ],
+      "highlights": [
+        "OPNsense",
+        "Custom firewall rules",
+        "Network segmentation",
+        "Dedicated router hardware"
+      ]
+    },
+    {
+      "slug": "calibre-rss-kindle-news",
+      "title": "Calibre RSS-to-Kindle News Delivery",
+      "tagline": "Calibre · RSS · Kindle · Automation",
+      "description": "An internal network pipeline that pulls RSS news through Calibre and delivers it straight to Kindles.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Networking",
+        "Automation"
+      ],
+      "companies": [],
+      "solution": [
+        "I built a pipeline where Calibre pulls news from RSS feeds and delivers formatted issues straight to Kindles over the internal network, with no manual syncing required."
+      ],
+      "highlights": [
+        "RSS ingestion",
+        "Calibre automation",
+        "Kindle delivery",
+        "Internal network pipeline"
+      ]
+    },
+    {
+      "slug": "nas-surveillance-system",
+      "title": "Self-Hosted NAS Surveillance System",
+      "tagline": "Surveillance · NAS · Self-Hosted",
+      "description": "Home camera surveillance running through the NAS, with no subscription required.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Networking",
+        "Hardware"
+      ],
+      "companies": [],
+      "problem": [
+        "Most home security camera systems lock recording and viewing behind a monthly subscription."
+      ],
+      "solution": [
+        "I run surveillance camera recording and monitoring through my NAS instead, avoiding subscription fees while keeping full control over the footage."
+      ],
+      "highlights": [
+        "NAS-based surveillance",
+        "No subscription required",
+        "Self-hosted footage storage"
+      ]
+    },
+    {
+      "slug": "custom-desktop-builds",
+      "title": "Custom Desktop Builds for Clients",
+      "tagline": "Hardware · PC Building · Client Work",
+      "description": "Custom-built multiple desktop computers for clients.",
+      "image": "/images/placeholder-no-preview.svg",
+      "imageFit": "contain",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Networking",
+        "Hardware"
+      ],
+      "companies": [],
+      "minor": true,
+      "solution": [
+        "I've built multiple custom desktop computers for clients, selecting and assembling hardware suited to their specific needs."
+      ],
+      "highlights": [
+        "Custom PC builds",
+        "Client hardware",
+        "Component selection & assembly"
       ]
     },
     {
