@@ -1189,8 +1189,8 @@
       "title": "ProfileLauncher",
       "tagline": "Browser · Productivity · macOS · Utility",
       "description": "Launch the right browser environment for the right context.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "https://ai.hamednouri.com/images/work/profilelauncher-thumbnail.jpg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
