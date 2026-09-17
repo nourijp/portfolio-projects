@@ -6,4 +6,11 @@
     </linearGradient>
   </defs>
   <rect width="600" height="400" fill="url(#g10)"/>
+  <g transform="translate(60,-55) scale(7.25)" fill="white" fill-opacity="0.16">
+    <path d="M22 20H28V30H41V20H47V49H41V36H28V49H22V20Z"/>
+  </g>
+  <g transform="translate(540,340)">
+    <circle cx="0" cy="0" r="22" fill="#F97316"/>
+    <path d="M22 20H28V30H41V20H47V49H41V36H28V49H22V20Z" fill="white" transform="translate(-34.5,-34.5) scale(0.62)"/>
+  </g>
 </svg>
