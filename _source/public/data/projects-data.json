@@ -40,7 +40,9 @@
         "Template and folder routing",
         "Tasks, events, projects, and notes",
         "Integration with existing Obsidian workflows"
-      ]
+      ],
+      "listImage": "/images/icons/voice-interface-obsidian.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "multilingual-collaboration",
@@ -115,7 +117,9 @@
         "Metadata and tagging",
         "Structured Markdown output",
         "Knowledge-base routing"
-      ]
+      ],
+      "listImage": "/images/icons/local-ai-document-pipeline.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "trmnl-eink-pipeline",
@@ -155,7 +159,9 @@
         "Multiple information views",
         "Caching",
         "Always-on ambient interface"
-      ]
+      ],
+      "listImage": "/images/icons/trmnl-eink-pipeline.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "comic-to-video-tool",
@@ -188,7 +194,9 @@
         "Scene composition",
         "Repeatable production workflows",
         "Batch processing"
-      ]
+      ],
+      "listImage": "/images/icons/comic-to-video-tool.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "deterministic-comic-coloring",
@@ -671,7 +679,9 @@
         "Document generation",
         "Career automation",
         "Custom productivity tooling"
-      ]
+      ],
+      "listImage": "/images/icons/resume-atelier.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "social-card-studio",
@@ -698,7 +708,9 @@
         "Reusable layouts",
         "Visual consistency",
         "Workflow acceleration"
-      ]
+      ],
+      "listImage": "/images/icons/social-card-studio.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "portfolio-card-studio",
@@ -725,7 +737,9 @@
         "Visual consistency",
         "Content production",
         "Purpose-built tooling"
-      ]
+      ],
+      "listImage": "/images/icons/portfolio-card-studio.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "banner-studio",
@@ -751,7 +765,9 @@
         "Reusable layouts",
         "Design automation",
         "Faster content production"
-      ]
+      ],
+      "listImage": "/images/icons/banner-studio.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "kindle-screensaver-studio",
@@ -777,7 +793,9 @@
         "Image preparation",
         "E-reader content",
         "Automated formatting"
-      ]
+      ],
+      "listImage": "/images/icons/kindle-screensaver-studio.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "word-to-anki",
@@ -802,7 +820,9 @@
         "Vocabulary learning",
         "Flashcard workflows",
         "Language-learning automation"
-      ]
+      ],
+      "listImage": "/images/icons/word-to-anki.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "save-safari-tabs",
@@ -828,7 +848,9 @@
         "Tab management",
         "Session capture",
         "Productivity automation"
-      ]
+      ],
+      "listImage": "/images/icons/save-safari-tabs.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "timewbar",
@@ -854,7 +876,9 @@
         "macOS utility",
         "Lightweight interface",
         "Productivity tooling"
-      ]
+      ],
+      "listImage": "/images/icons/timewbar.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "video-notes",
@@ -880,7 +904,9 @@
         "Note capture",
         "Knowledge management",
         "Structured information"
-      ]
+      ],
+      "listImage": "/images/icons/video-notes.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "lulu-book-pipeline",
@@ -909,7 +935,9 @@
         "Repeatable workflows",
         "File preparation",
         "Lulu publishing"
-      ]
+      ],
+      "listImage": "/images/icons/lulu-book-pipeline.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "cycle",
@@ -940,7 +968,9 @@
         "Open-window search",
         "Installed-app search/launch",
         "macOS utility"
-      ]
+      ],
+      "listImage": "/images/icons/cycle.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "dash",
@@ -969,7 +999,9 @@
         "Multi-app monitoring",
         "Network health checks",
         "Custom macOS tooling"
-      ]
+      ],
+      "listImage": "/images/icons/dash.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "both-ears",
@@ -995,7 +1027,9 @@
         "Mono-to-stereo",
         "Fan-noise removal",
         "Drag-drop macOS utility"
-      ]
+      ],
+      "listImage": "/images/icons/both-ears.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "ram-watchdog",
@@ -1022,7 +1056,9 @@
         "macOS menu bar",
         "Lightweight utility",
         "Performance visibility"
-      ]
+      ],
+      "listImage": "/images/icons/ram-watchdog.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "ka-blam-formatter",
@@ -1048,7 +1084,9 @@
         "Automated formatting",
         "Print preparation",
         "Production tooling"
-      ]
+      ],
+      "listImage": "/images/icons/ka-blam-formatter.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "imessage-backup-tool",
@@ -1074,7 +1112,9 @@
         "Data backup",
         "Archival workflows",
         "macOS tooling"
-      ]
+      ],
+      "listImage": "/images/icons/imessage-backup-tool.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "imessage-archive-viewer",
@@ -1100,7 +1140,9 @@
         "Conversation history",
         "Data preservation",
         "macOS"
-      ]
+      ],
+      "listImage": "/images/icons/imessage-archive-viewer.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "imessage-auto-reply",
@@ -1126,7 +1168,9 @@
         "iMessage",
         "Workflow automation",
         "macOS utility"
-      ]
+      ],
+      "listImage": "/images/icons/imessage-auto-reply.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "wgstatusbar",
@@ -1153,7 +1197,9 @@
         "macOS menu bar",
         "Connectivity",
         "System utility"
-      ]
+      ],
+      "listImage": "/images/icons/wgstatusbar.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "capture-bar",
@@ -1182,7 +1228,9 @@
         "Productivity",
         "Workflow integration",
         "Low-friction interface"
-      ]
+      ],
+      "listImage": "/images/icons/capture-bar.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "profilelauncher",
@@ -1208,7 +1256,9 @@
         "Context switching",
         "macOS",
         "Workflow acceleration"
-      ]
+      ],
+      "listImage": "/images/icons/profilelauncher.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "brand-aid",
@@ -1240,7 +1290,9 @@
         "One-click export",
         "Native macOS app",
         "Used to produce this site's own thumbnails"
-      ]
+      ],
+      "listImage": "/images/icons/brand-aid.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "home-nas-deployment",
@@ -1608,7 +1660,9 @@
         "Horizontal to vertical crop",
         "Instant output",
         "Final iteration of an evolving tool"
-      ]
+      ],
+      "listImage": "/images/icons/vertical-crop.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "still-grabber",
@@ -1636,7 +1690,9 @@
         "Drag-and-drop video input",
         "Automatic still extraction",
         "Built for social thumbnail workflows"
-      ]
+      ],
+      "listImage": "/images/icons/still-grabber.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "pinnacle-thumbnail-maker",
@@ -1667,7 +1723,9 @@
         "Drag-and-drop still image input",
         "Minimal text entry",
         "Consistent on-brand output"
-      ]
+      ],
+      "listImage": "/images/icons/pinnacle-thumbnail-maker.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "caption-pop",
@@ -1698,7 +1756,9 @@
         "Editable timing & text",
         "No subscription cost",
         "Near-perfect accuracy"
-      ]
+      ],
+      "listImage": "/images/icons/caption-pop.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "bgm-mixer",
@@ -1726,7 +1786,9 @@
         "Random or chosen track selection",
         "Curated audio folder",
         "Instant background music"
-      ]
+      ],
+      "listImage": "/images/icons/bgm-mixer.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "pinnacle-photo-brander",
@@ -1753,7 +1815,9 @@
         "Automated photo branding",
         "Client-specific design",
         "Social media ready output"
-      ]
+      ],
+      "listImage": "/images/icons/pinnacle-photo-brander.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "video-patch",
@@ -1781,7 +1845,9 @@
         "Solid colour patching",
         "Client video touch-ups",
         "Targeted, minimal editing"
-      ]
+      ],
+      "listImage": "/images/icons/video-patch.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "still-motion",
@@ -1806,7 +1872,9 @@
         "Vertical 1080×1920 output",
         "Slow-motion (Ken Burns) effect",
         "Script-driven captions"
-      ]
+      ],
+      "listImage": "/images/icons/still-motion.png",
+      "listImageFit": "contain"
     },
     {
       "slug": "example-accomplishment",
