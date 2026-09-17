@@ -195,8 +195,8 @@
       "title": "Deterministic Comic Coloring Engine",
       "tagline": "Visual Processing · Style Consistency",
       "description": "Consistent comic coloring without relying on generative output.",
-      "image": "/images/placeholder-in-progress.svg",
-      "imageFit": "contain",
+      "image": "https://ai.hamednouri.com/images/work/deterministic-comic-coloring-thumbnail.jpg",
+      "imageFit": "cover",
       "badge": "In Progress",
       "types": [
         "Project"
