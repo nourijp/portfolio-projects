@@ -1029,8 +1029,8 @@
       "title": "Ka-Blam Formatter",
       "tagline": "Publishing · Formatting · Automation",
       "description": "Automates repetitive formatting work for print publishing.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "https://ai.hamednouri.com/images/work/ka-blam-formatter-thumbnail.jpg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
