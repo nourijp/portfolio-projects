@@ -18,6 +18,7 @@ export type ProjectEntry = {
   types: string[];
   categories: string[];
   companies?: string[];
+  minor?: boolean;
   externalUrl?: string;
   problem?: string[];
   solution?: string[];

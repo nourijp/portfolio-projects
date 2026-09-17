@@ -42,6 +42,8 @@
       "tagline": "LLMs · Translation · Structured Data · Collaboration",
       "description": "A shared workspace where English and Japanese users can work on the same content in their own languages while changes remain synchronized.",
       "image": "https://ai.hamednouri.com/images/work/work-img-4.jpg",
+      "galleryImage": "https://ai.hamednouri.com/images/work/multilingual-collaboration-thumbnail.jpg",
+      "galleryImageFit": "cover",
       "types": ["Project"],
       "categories": ["AI", "Communication"],
       "companies": [],
@@ -204,6 +206,7 @@
       "types": ["Project"],
       "categories": ["Product Development"],
       "companies": [],
+      "minor": true,
       "highlights": ["Batch asset extraction", "Multi-format export (APNG, WebP)", "Transparency normalization", "LINE / WhatsApp / Telegram compatible"]
     },
     {

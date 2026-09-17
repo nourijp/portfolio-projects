@@ -63,13 +63,16 @@ export default function HomeClient() {
   );
 
   const filtered = useMemo(() => {
-    return entries.filter((e) => {
+    const matches = entries.filter((e) => {
       const typeMatch = selectedTypes.length === 0 || e.types.some((t) => selectedTypes.includes(t));
       const catMatch = selectedCategories.length === 0 || e.categories.some((c) => selectedCategories.includes(c));
       const companyMatch =
         selectedCompanies.length === 0 || (e.companies || []).some((c) => selectedCompanies.includes(c));
       return typeMatch && catMatch && companyMatch;
     });
+    // Minor entries (small/one-off tools) sort to the end, regardless of
+    // active filters -- a prominence signal, not a topic to filter by.
+    return [...matches].sort((a, b) => Number(!!a.minor) - Number(!!b.minor));
   }, [selectedTypes, selectedCategories, selectedCompanies]);
 
   const toggleType = (t: string) =>
