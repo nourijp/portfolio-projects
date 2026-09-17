@@ -36,7 +36,14 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
     // a headshot in the compact list row.
     const img = entry.listImage || entry.image;
     const imgFit = entry.listImage ? entry.listImageFit : entry.imageFit;
-    const listFitClass = imgFit === "contain" ? "object-contain bg-black" : "object-cover bg-softGray";
+    // A real app icon (entry.listImage) already has its own background baked
+    // into the artwork -- no backdrop box behind it. Only the image/gallery
+    // fallback (a photo that may letterbox) gets a backdrop.
+    const listFitClass = entry.listImage
+      ? "object-contain"
+      : imgFit === "contain"
+      ? "object-contain bg-black"
+      : "object-cover bg-softGray";
     return (
       <div className="group flex items-center gap-4 py-4 border-b border-softGray hover:bg-softGray/50 transition-colors px-2 -mx-2 rounded-lg">
         <div className={`relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 ${listFitClass}`}>

@@ -61,6 +61,8 @@
         "Automation"
       ],
       "companies": ["Mindful Computing Clients"],
+      "listImage": "/images/icons/word-to-anki.png",
+      "listImageFit": "contain",
       "problem": [
         "Traditional translation workflows create separate copies of the same information.",
         "When one side edits the English version, the Japanese version can quickly become outdated—and vice versa. That creates duplicated work and makes multilingual collaboration difficult."
@@ -1037,8 +1039,7 @@
       ],
       "categories": [
         "macOS",
-        "Automation",
-        "Experiments"
+        "Automation"
       ],
       "companies": [],
       "minor": true,
