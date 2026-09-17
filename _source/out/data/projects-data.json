@@ -678,8 +678,8 @@
       "title": "Social Card Studio",
       "tagline": "Design · Content · Automation · Social Media",
       "description": "A focused tool for producing consistent social graphics quickly.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "https://ai.hamednouri.com/images/work/social-card-studio-thumbnail.jpg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
