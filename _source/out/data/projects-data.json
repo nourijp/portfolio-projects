@@ -732,8 +732,8 @@
       "title": "Banner Studio",
       "tagline": "Design · Automation · Content Tools",
       "description": "A focused design utility for quickly generating consistent banners.",
-      "image": "/images/placeholder-no-preview.svg",
-      "imageFit": "contain",
+      "image": "https://ai.hamednouri.com/images/work/banner-studio-thumbnail.jpg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
