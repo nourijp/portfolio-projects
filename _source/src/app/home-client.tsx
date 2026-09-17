@@ -76,9 +76,9 @@ export default function HomeClient() {
       return typeMatch && catMatch && companyMatch;
     });
     // Prominence sort, not a topic filter: entries without a real (non-
-    // placeholder) thumbnail sink below ones that have custom art, and
-    // Networking-category entries sink slightly further below that --
-    // both weighted below the minor flag, which always sorts last.
+    // placeholder) thumbnail sink below every entry that has custom art.
+    // Single criterion for now -- minor/Networking no longer add their own
+    // separate demotion once this already applies.
     const hasCustomThumbnail = (e: ProjectEntry) => {
       const img = e.galleryImage || e.image || "";
       return (
@@ -87,8 +87,7 @@ export default function HomeClient() {
         !/work-img-\d/.test(img)
       );
     };
-    const demotionScore = (e: ProjectEntry) =>
-      Number(!!e.minor) * 4 + Number(!hasCustomThumbnail(e)) * 2 + Number(e.categories.includes("Networking"));
+    const demotionScore = (e: ProjectEntry) => Number(!hasCustomThumbnail(e));
     return [...matches].sort((a, b) => demotionScore(a) - demotionScore(b));
   }, [selectedTypes, selectedCategories, selectedCompanies]);
 
