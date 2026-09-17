@@ -8,7 +8,9 @@ export type ProjectEntry = {
   tagline: string;
   description: string;
   image: string;
+  listImage?: string;
   imageFit?: "cover" | "contain";
+  listImageFit?: "cover" | "contain";
   types: string[];
   categories: string[];
   companies?: string[];
@@ -23,15 +25,21 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
   const fitClass = entry.imageFit === "contain" ? "object-contain bg-black" : "object-cover bg-softGray";
 
   if (view === "list") {
+    // A testimonial (or any entry) can show a different image in list view
+    // than in gallery view -- e.g. a designed quote graphic in the gallery,
+    // a headshot in the compact list row.
+    const img = entry.listImage || entry.image;
+    const imgFit = entry.listImage ? entry.listImageFit : entry.imageFit;
+    const listFitClass = imgFit === "contain" ? "object-contain bg-black" : "object-cover bg-softGray";
     return (
       <div className="group flex items-center gap-4 py-4 border-b border-softGray hover:bg-softGray/50 transition-colors px-2 -mx-2 rounded-lg">
-        <div className={`w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 ${fitClass}`}>
+        <div className={`w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 ${listFitClass}`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={entry.image} alt={entry.title} className={`w-full h-full ${entry.imageFit === "contain" ? "object-contain" : "object-cover"}`} />
+          <img src={img} alt={entry.title} className={`w-full h-full ${imgFit === "contain" ? "object-contain" : "object-cover"}`} />
         </div>
         <div className="flex-1 min-w-0">
           <h5 className="text-lg font-semibold truncate">{entry.title}</h5>
-          <p className="text-sm text-secondary truncate">{entry.tagline}</p>
+          <p className="text-sm text-secondary truncate">{entry.description || entry.tagline}</p>
         </div>
         <div className="hidden sm:flex flex-wrap gap-1.5 max-w-xs justify-end">
           {entry.categories.map((c) => (
