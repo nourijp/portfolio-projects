@@ -1296,9 +1296,9 @@
     },
     {
       "slug": "home-nas-deployment",
-      "title": "Home NAS Deployment",
+      "title": "NAS Deployment",
       "tagline": "NAS · Storage · Infrastructure",
-      "description": "Deployed and configured a home NAS as the backbone of my network's storage, sharing, and self-hosting.",
+      "description": "Deployed and configured a NAS as the backbone of a network's storage, sharing, and self-hosting.",
       "image": "/images/gradients/gradient-1.svg",
       "imageFit": "cover",
       "types": [
@@ -1310,16 +1310,16 @@
       ],
       "companies": [],
       "problem": [
-        "I needed a reliable, centralized place to store, back up, and serve files, photos, and self-hosted services across my home network instead of scattering them across individual machines."
+        "The network needed a reliable, centralized place to store, back up, and serve files, photos, and self-hosted services instead of scattering them across individual machines."
       ],
       "solution": [
-        "I deployed and configured a NAS as the storage and services backbone for my home network -- the foundation that my backup, sharing, surveillance, and self-hosted app projects all run on."
+        "I deployed and configured a NAS as the storage and services backbone for the network -- the foundation that the backup, sharing, surveillance, and self-hosted app projects all run on."
       ],
       "highlights": [
         "NAS deployment & configuration",
         "Centralized storage",
         "Foundation for self-hosted services",
-        "Home network infrastructure"
+        "Network infrastructure"
       ]
     },
     {
