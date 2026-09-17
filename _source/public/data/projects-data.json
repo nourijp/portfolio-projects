@@ -299,7 +299,8 @@
       "title": "34-Site Deployment System",
       "tagline": "Next.js · GitHub · Cloudflare · Automation",
       "description": "A deployment system that lets me manage dozens of independent project websites without manually configuring hosting, DNS, repositories, and deployments for each one.",
-      "image": "https://ai.hamednouri.com/images/work/work-img-1.jpg",
+      "image": "https://ai.hamednouri.com/images/work/34-site-deployment-thumbnail.jpg",
+      "imageFit": "cover",
       "galleryImage": "https://ai.hamednouri.com/images/work/34-site-deployment-thumbnail.jpg",
       "galleryImageFit": "cover",
       "types": [
@@ -370,28 +371,6 @@
         "Multi-format export (APNG, WebP)",
         "Transparency normalization",
         "LINE / WhatsApp / Telegram compatible"
-      ]
-    },
-    {
-      "slug": "ai-multilingual-learning",
-      "title": "AI Multilingual Learning System",
-      "tagline": "LLM Classification, Anki",
-      "description": "An AI-assisted language learning pipeline that classifies vocabulary and grammar items using LLMs, generates context-rich flashcard content, and pipes structured output into Anki decks. Supports English, Japanese, and Farsi learning tracks.",
-      "image": "https://ai.hamednouri.com/images/work/work-img-4.jpg",
-      "types": [
-        "Project"
-      ],
-      "categories": [
-        "AI",
-        "Language",
-        "Automation"
-      ],
-      "companies": [],
-      "highlights": [
-        "LLM-powered content classification",
-        "Automated Anki deck generation",
-        "Multi-language support (EN/JP/FA)",
-        "Spaced repetition optimization"
       ]
     },
     {
@@ -800,26 +779,28 @@
     {
       "slug": "word-to-anki",
       "title": "Word-to-Anki",
-      "tagline": "Education · Anki · Automation · Language Learning",
-      "description": "Turn vocabulary into study-ready Anki material with less manual work.",
+      "tagline": "AI · Education · Anki · Language Learning",
+      "description": "An AI-assisted pipeline that classifies vocabulary and grammar items, generates context-rich flashcard content, and turns it into study-ready Anki decks with less manual work.",
       "image": "/images/gradients/gradient-11.svg",
       "imageFit": "cover",
       "types": [
         "Project"
       ],
       "categories": [
+        "AI",
+        "Language",
         "Automation"
       ],
       "companies": [],
-      "minor": true,
       "solution": [
-        "Finding a word takes seconds; creating, formatting, and organizing a useful flashcard takes considerably longer. I built a workflow that bridges vocabulary capture and Anki so words can move into my study system with less manual processing."
+        "Finding a word takes seconds; creating a useful, well-formatted flashcard takes considerably longer. I built a pipeline that uses LLMs to classify vocabulary and grammar items and generate context-rich flashcard content, then pipes the structured output into Anki decks -- supporting English, Japanese, and Farsi learning tracks."
       ],
       "highlights": [
-        "Anki integration",
-        "Vocabulary learning",
-        "Flashcard workflows",
-        "Language-learning automation"
+        "LLM-powered content classification",
+        "Automated Anki deck generation",
+        "Multi-language support (EN/JP/FA)",
+        "Spaced repetition optimization",
+        "Vocabulary capture workflow"
       ],
       "listImage": "/images/icons/word-to-anki.png",
       "listImageFit": "contain"
