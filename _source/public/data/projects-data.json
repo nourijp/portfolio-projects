@@ -168,9 +168,12 @@
       "tagline": "Next.js · GitHub · Cloudflare · Automation",
       "description": "A deployment system that lets me manage dozens of independent project websites without manually configuring hosting, DNS, repositories, and deployments for each one.",
       "image": "https://ai.hamednouri.com/images/work/work-img-1.jpg",
+      "galleryImage": "https://ai.hamednouri.com/images/work/34-site-deployment-thumbnail.jpg",
+      "galleryImageFit": "cover",
       "types": ["Project"],
       "categories": ["Product Development"],
       "companies": [],
+      "minor": true,
       "problem": [
         "Maintaining dozens of small project and portfolio sites creates repetitive infrastructure work.",
         "Every new site normally requires repository setup, deployment configuration, DNS records, subdomains, and ongoing maintenance."
