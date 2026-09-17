@@ -7,15 +7,30 @@
       "description": "A voice-driven interface that turns natural speech into structured tasks, projects, events, and notes inside a customized Obsidian knowledge system.",
       "image": "https://ai.hamednouri.com/images/work/work-img-voice-interface.jpg",
       "imageFit": "contain",
-      "types": [
-        "Project"
+      "types": ["Project"],
+      "categories": ["AI", "Product Development"],
+      "companies": [],
+      "problem": [
+        "My Obsidian system already organized projects, tasks, events, notes, and daily information—but adding something still required opening the application, navigating to the right place, and entering the correct metadata.",
+        "I wanted the system to understand intent without requiring the interface."
       ],
-      "categories": [
-        "AI",
-        "Product Development"
+      "solution": [
+        "I built a voice layer that accepts natural speech, transcribes it, identifies the user's intent, and converts it into structured Markdown.",
+        "The system determines whether the input is a task, event, project, note, or other supported object and applies the appropriate metadata, template, folder, and date information.",
+        "The resulting item appears inside the existing Obsidian system without requiring manual organization."
       ],
-      "externalUrl": "https://ai.hamednouri.com/projects/voice-interface-obsidian/",
-      "companies": []
+      "howItWorks": [
+        "**Example:** Spoken input — \"Add Toyota interview Tuesday at 9 AM.\" The system identifies the event, extracts the date and time, generates the structured entry, and places it into the appropriate workflow."
+      ],
+      "highlights": [
+        "Speech-to-text input",
+        "Local LLM intent parsing",
+        "Structured Markdown generation",
+        "Automatic metadata",
+        "Template and folder routing",
+        "Tasks, events, projects, and notes",
+        "Integration with existing Obsidian workflows"
+      ]
     },
     {
       "slug": "multilingual-collaboration",
@@ -23,15 +38,26 @@
       "tagline": "LLMs · Translation · Structured Data · Collaboration",
       "description": "A shared workspace where English and Japanese users can work on the same content in their own languages while changes remain synchronized.",
       "image": "https://ai.hamednouri.com/images/work/work-img-4.jpg",
-      "types": [
-        "Project"
+      "types": ["Project"],
+      "categories": ["AI", "Communication"],
+      "companies": [],
+      "problem": [
+        "Traditional translation workflows create separate copies of the same information.",
+        "When one side edits the English version, the Japanese version can quickly become outdated—and vice versa. That creates duplicated work and makes multilingual collaboration difficult."
       ],
-      "categories": [
-        "AI",
-        "Communication"
+      "solution": [
+        "I built a multilingual collaboration system where English and Japanese users interact with the same underlying content while viewing and editing it in their preferred language.",
+        "Changes are synchronized so the system behaves like one shared workspace rather than two translated documents.",
+        "The goal was not simply translation. It was designing collaboration around the reality that participants may not share the same language."
       ],
-      "externalUrl": "https://ai.hamednouri.com/projects/multilingual-collaboration/",
-      "companies": []
+      "highlights": [
+        "English ↔ Japanese collaboration",
+        "Shared underlying content",
+        "Automatic synchronization",
+        "AI-assisted translation",
+        "Structured content management",
+        "Cross-language editing"
+      ]
     },
     {
       "slug": "local-ai-document-pipeline",
@@ -39,15 +65,32 @@
       "tagline": "Local LLMs · OCR · Markdown · Automation",
       "description": "A document-processing workflow that turns captured paperwork into organized knowledge, extracting tasks, deadlines, metadata, and useful information automatically.",
       "image": "https://ai.hamednouri.com/images/work/work-img-1.jpg",
-      "types": [
-        "Project"
+      "types": ["Project"],
+      "categories": ["AI", "Product Development"],
+      "companies": [],
+      "problem": [
+        "Important information arrives through paperwork, screenshots, PDFs, receipts, forms, and other documents.",
+        "Capturing the document is easy. Turning it into something searchable and actionable is not."
       ],
-      "categories": [
-        "AI",
-        "Product Development"
+      "solution": [
+        "I built a workflow connecting mobile document capture with a local AI processing system and desktop knowledge base.",
+        "Documents are processed, classified, and converted into structured information.",
+        "The pipeline can identify useful metadata, extract tasks and deadlines, assign tags, and route the resulting Markdown into the appropriate location in the knowledge system."
       ],
-      "externalUrl": "https://ai.hamednouri.com/projects/local-ai-document-pipeline/",
-      "companies": []
+      "howItWorks": [
+        "**Workflow:** Capture → OCR / extraction → classification → structured data → tasks / deadlines → Markdown → knowledge base"
+      ],
+      "highlights": [
+        "Mobile document capture",
+        "Local AI processing",
+        "OCR",
+        "Automatic classification",
+        "Task extraction",
+        "Deadline extraction",
+        "Metadata and tagging",
+        "Structured Markdown output",
+        "Knowledge-base routing"
+      ]
     },
     {
       "slug": "trmnl-eink-pipeline",
@@ -56,15 +99,30 @@
       "description": "A calm, always-on interface that turns information from my Obsidian knowledge system into glanceable screens for tasks, projects, events, notes, and daily context.",
       "image": "https://ai.hamednouri.com/images/work/work-img-trmnl.jpg",
       "imageFit": "contain",
-      "types": [
-        "Project"
+      "types": ["Project"],
+      "categories": ["Product Development", "AI"],
+      "companies": [],
+      "problem": [
+        "My tasks, calendar, projects, notes, and other useful information already existed digitally—but seeing them meant opening an application and actively looking for them.",
+        "I wanted important information to remain visible without another screen demanding attention."
       ],
-      "categories": [
-        "Product Development",
-        "AI"
+      "solution": [
+        "I connected my Obsidian knowledge system to an e-ink display.",
+        "A custom service reads structured Markdown and other data sources, determines what should be displayed, renders display-ready screens, and sends them to the device.",
+        "Different views can surface tasks, calendar information, projects, notes, highlights, meal planning, and other context."
       ],
-      "externalUrl": "https://ai.hamednouri.com/projects/trmnl-eink-pipeline/",
-      "companies": []
+      "howItWorks": [
+        "**Design principle:** Inform, don't interrupt. The display is intentionally quiet. It provides ambient awareness without notifications, app switching, or another bright screen."
+      ],
+      "highlights": [
+        "Obsidian / Markdown source",
+        "E-ink rendering",
+        "Backend APIs",
+        "Scheduled refresh",
+        "Multiple information views",
+        "Caching",
+        "Always-on ambient interface"
+      ]
     },
     {
       "slug": "comic-to-video-tool",
@@ -72,14 +130,25 @@
       "tagline": "Creative Technology · Timeline UI · Keyframes · Automation",
       "description": "A production interface for turning layered comic artwork into motion content using timeline editing, camera keyframes, and repeatable batch workflows.",
       "image": "https://ai.hamednouri.com/images/work/work-img-5.jpg",
-      "types": [
-        "Project"
+      "types": ["Project"],
+      "categories": ["Product Development"],
+      "companies": [],
+      "problem": [
+        "Turning static comic artwork into video requires repetitive editing: positioning artwork, creating camera movement, timing scenes, and repeating the process across many panels.",
+        "General-purpose video editors can do this, but the workflow is unnecessarily manual for comic-based content."
       ],
-      "categories": [
-        "Product Development"
+      "solution": [
+        "I developed a purpose-built production tool for converting layered comic artwork into video.",
+        "The interface provides timeline editing, camera keyframes, layered asset control, and repeatable workflows designed specifically around comic production."
       ],
-      "externalUrl": "https://ai.hamednouri.com/projects/comic-to-video-tool/",
-      "companies": []
+      "highlights": [
+        "Timeline editing",
+        "Camera keyframes",
+        "Layered artwork",
+        "Scene composition",
+        "Repeatable production workflows",
+        "Batch processing"
+      ]
     },
     {
       "slug": "26-site-deployment",
@@ -87,14 +156,27 @@
       "tagline": "Next.js · GitHub · Cloudflare · Automation",
       "description": "A deployment system that lets me manage dozens of independent project websites without manually configuring hosting, DNS, repositories, and deployments for each one.",
       "image": "https://ai.hamednouri.com/images/work/work-img-1.jpg",
-      "types": [
-        "Project"
+      "types": ["Project"],
+      "categories": ["Product Development"],
+      "companies": [],
+      "problem": [
+        "Maintaining dozens of small project and portfolio sites creates repetitive infrastructure work.",
+        "Every new site normally requires repository setup, deployment configuration, DNS records, subdomains, and ongoing maintenance."
       ],
-      "categories": [
-        "Product Development"
+      "solution": [
+        "I automated the workflow.",
+        "The system builds, exports, deploys, and manages 34 independent websites across GitHub and Cloudflare.",
+        "Each project remains independently version-controlled and mapped to its own subdomain while shared automation handles repetitive deployment work."
       ],
-      "externalUrl": "https://ai.hamednouri.com/projects/26-site-deployment/",
-      "companies": []
+      "highlights": [
+        "34 sites",
+        "Automated deployments",
+        "GitHub integration",
+        "Cloudflare API",
+        "DNS automation",
+        "Next.js static exports",
+        "Independent version control"
+      ]
     },
     {
       "slug": "cross-device-automation",
@@ -102,14 +184,10 @@
       "tagline": "Raycast, Obsidian, Shell",
       "description": "A personal automation ecosystem spanning Mac, iOS, and terminal environments. Unified Raycast scripts, Obsidian workflows, and shell aliases into a consistent, context-aware productivity layer that reduces friction across development, writing, and research tasks.",
       "image": "https://ai.hamednouri.com/images/work/work-img-2.jpg",
-      "types": [
-        "Project"
-      ],
-      "categories": [
-        "Product Development"
-      ],
-      "externalUrl": "https://ai.hamednouri.com/projects/cross-device-automation/",
-      "companies": []
+      "types": ["Project"],
+      "categories": ["Product Development"],
+      "companies": [],
+      "highlights": ["Raycast script commands", "Obsidian templating & automation", "Shell alias library", "Cross-device sync via iCloud & Git"]
     },
     {
       "slug": "messaging-sticker-conversion",
@@ -117,14 +195,10 @@
       "tagline": "Asset Extraction Pipeline",
       "description": "A batch processing pipeline to extract, convert, and package messaging sticker assets across multiple formats and platforms, automating frame extraction, transparency normalization, and export to APNG/WebP formats compatible with LINE, WhatsApp, and Telegram.",
       "image": "https://ai.hamednouri.com/images/work/work-img-5.jpg",
-      "types": [
-        "Project"
-      ],
-      "categories": [
-        "Product Development"
-      ],
-      "externalUrl": "https://ai.hamednouri.com/projects/messaging-sticker-conversion/",
-      "companies": []
+      "types": ["Project"],
+      "categories": ["Product Development"],
+      "companies": [],
+      "highlights": ["Batch asset extraction", "Multi-format export (APNG, WebP)", "Transparency normalization", "LINE / WhatsApp / Telegram compatible"]
     },
     {
       "slug": "ai-multilingual-learning",
@@ -132,14 +206,10 @@
       "tagline": "LLM Classification, Anki",
       "description": "An AI-assisted language learning pipeline that classifies vocabulary and grammar items using LLMs, generates context-rich flashcard content, and pipes structured output into Anki decks. Supports English, Japanese, and Farsi learning tracks.",
       "image": "https://ai.hamednouri.com/images/work/work-img-4.jpg",
-      "types": [
-        "Project"
-      ],
-      "categories": [
-        "AI"
-      ],
-      "externalUrl": "https://ai.hamednouri.com/projects/ai-multilingual-learning/",
-      "companies": []
+      "types": ["Project"],
+      "categories": ["AI"],
+      "companies": [],
+      "highlights": ["LLM-powered content classification", "Automated Anki deck generation", "Multi-language support (EN/JP/FA)", "Spaced repetition optimization"]
     }
   ]
 }

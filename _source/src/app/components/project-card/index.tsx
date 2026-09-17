@@ -15,6 +15,7 @@ export type ProjectEntry = {
   externalUrl?: string;
   problem?: string[];
   solution?: string[];
+  howItWorks?: string[];
   highlights?: string[];
 };
 
