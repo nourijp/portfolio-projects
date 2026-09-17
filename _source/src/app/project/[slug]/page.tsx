@@ -68,12 +68,22 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         <h1 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">{entry.title}</h1>
         <p className="text-xl text-secondary leading-relaxed mb-10">{entry.description}</p>
 
+        {/*
+          Natural-aspect-ratio container, not a fixed height: a fixed
+          h-72/h-96 box combined with object-cover crops down to a sliver of
+          a wide banner image on a narrow (mobile) viewport -- e.g. a
+          3.36:1 crop would show just its center on a phone. Scaling height
+          to width instead means the full image is always visible at any
+          screen size. max-h caps it from getting excessive on very wide
+          desktop viewports; object-contain within that cap handles any
+          unusually tall image gracefully too.
+        */}
         <div className={`rounded-2xl overflow-hidden mb-14 ${fitClass}`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={detailImg}
             alt={entry.title}
-            className={`w-full h-72 md:h-96 ${detailImgFit === "contain" ? "object-contain" : "object-cover"}`}
+            className="w-full h-auto max-h-[70vh] object-contain mx-auto"
           />
         </div>
 
