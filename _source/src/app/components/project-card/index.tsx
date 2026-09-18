@@ -29,6 +29,17 @@ export type ProjectEntry = {
   highlights?: string[];
 };
 
+// Cuts a testimonial down to a short, quotable excerpt -- breaking on a
+// word boundary rather than mid-word -- so the list row can show "<snippet>"
+// followed by a click-through prompt instead of the entire multi-paragraph
+// quote.
+function excerpt(text: string, maxLen = 120) {
+  if (text.length <= maxLen) return text;
+  const cut = text.slice(0, maxLen);
+  const lastSpace = cut.lastIndexOf(" ");
+  return cut.slice(0, lastSpace > 0 ? lastSpace : maxLen).trimEnd();
+}
+
 function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "list" }) {
   // Testimonials read better as a pull-quote: the quote itself takes the
   // large/prominent text slot, with the person's name demoted to the small
@@ -58,9 +69,16 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-start gap-2">
-            <h5 className={`text-lg font-semibold ${isTestimonial ? "line-clamp-2" : "truncate"}`}>
-              {isTestimonial ? entry.description : entry.title}
-            </h5>
+            {isTestimonial ? (
+              <h5 className="text-lg font-medium italic leading-snug text-black">
+                &ldquo;{excerpt(entry.description)}&rdquo;{" "}
+                <span className="not-italic text-sm font-semibold text-primary whitespace-nowrap">
+                  Read full recommendation
+                </span>
+              </h5>
+            ) : (
+              <h5 className="text-lg font-semibold truncate">{entry.title}</h5>
+            )}
             {entry.badge && (
               <span className="text-xs py-0.5 px-2 rounded-full bg-amber-100 text-amber-800 flex-shrink-0">
                 {entry.badge}
@@ -102,6 +120,12 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
           </div>
           <span className="text-sm font-semibold">{entry.title}</span>
         </div>
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary py-2 px-4 rounded-full border border-primary w-fit group-hover:bg-primary group-hover:text-white transition-colors">
+          Read Full Recommendation
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M9 6l6 6-6 6" />
+          </svg>
+        </span>
       </div>
     );
   }
