@@ -20,11 +20,15 @@ function Pill({
   active,
   onClick,
   icon,
+  darkInactive,
 }: {
   label: string;
   active: boolean;
   onClick: () => void;
   icon?: React.ReactNode;
+  // Type pills sit inactive-black/active-orange; Category and Company
+  // pills keep the original inactive-white look.
+  darkInactive?: boolean;
 }) {
   return (
     <button
@@ -32,6 +36,8 @@ function Pill({
       className={`flex items-center gap-1.5 py-2 px-4 rounded-full text-sm font-medium border transition-colors ${
         active
           ? "bg-primary text-white border-primary"
+          : darkInactive
+          ? "bg-black text-white border-black hover:border-primary"
           : "bg-white text-black border-mistGray hover:border-primary"
       }`}
     >
@@ -100,6 +106,7 @@ const FilterBar = ({
               label={t}
               icon={TYPE_ICONS[t]}
               active={selectedTypes.includes(t)}
+              darkInactive
               onClick={() => onSetType(t)}
             />
           ))}
