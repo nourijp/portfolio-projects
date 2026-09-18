@@ -2019,22 +2019,25 @@
       "companies": [],
       "problem": [
         "Machine-translated subtitles read literally, but literal translation loses idiom, humor, and cultural references specific to the source language and the show itself.",
-        "A translator needs to stay consistent across an entire series -- the same character, joke, or honorific should translate the same way every time it appears."
+        "A translator needs to stay consistent across an entire series -- the same character, joke, or honorific should translate the same way every time it appears, across hundreds of lines and many episodes.",
+        "Nobody can proof-watch every episode before it ships, so the pipeline itself has to catch its own errors instead of relying on a human to spot them after the fact."
       ],
       "solution": [
-        "I built a subtitle pipeline that pairs local AI translation with a per-series \"glossary brain\" -- a locked reference of names, honorifics, and recurring phrases so translations stay consistent from episode to episode.",
-        "Beyond literal translation, the pipeline considers cultural context: idioms, humor, and references get localized rather than translated word-for-word, so a joke or turn of phrase lands the way it was intended for the target audience.",
-        "It also extracts burned-in subtitles directly from video via OCR when no separate subtitle file exists, and can transcribe dialogue from audio when there's no source text to start from."
+        "I built a subtitle pipeline that pairs local AI translation with a per-series \"glossary brain\" -- a locked reference of names, honorifics, and recurring phrases so translations stay consistent from episode to episode, with a scan step that flags new recurring names before they slip through unlocked.",
+        "Beyond literal translation, the pipeline considers cultural context: idioms, humor, dialect, and second-language dialogue get localized and register-matched rather than translated word-for-word, so a joke or turn of phrase lands the way it was intended for the target audience.",
+        "It extracts burned-in subtitles directly from video via frame-sampled OCR when no separate subtitle file exists, and transcribes dialogue locally when there's no source text to start from -- with speaker diarization run first so gendered, politeness-sensitive translation knows who's actually talking.",
+        "Before anything ships, an automated audit checks timing, line length, and reading speed, retimes cues to real speech onsets so subtitles never appear before the words, and a fidelity pass re-checks every uncertain line against the source -- every episode goes through the same gate, with no exceptions."
       ],
       "howItWorks": [
-        "**Workflow:** Source video/audio/subtitles → OCR or transcription (local Whisper) → glossary-aware AI translation → cultural/idiom pass → QC flags → final subtitle file"
+        "**Workflow:** Source video/audio/subtitles → OCR or local transcription → speaker diarization → glossary-aware translation → cultural/idiom pass → voice-activity-based retiming → automated mechanical audit → fidelity re-check → final subtitle file, muxed or burned into video"
       ],
       "highlights": [
-        "Per-series glossary \"brain\" for consistent names and phrasing",
-        "Cultural and idiomatic localization, not literal translation",
-        "Burned-in subtitle extraction via OCR",
-        "Local Whisper transcription when no subtitle source exists",
-        "Automated QC flags for review",
+        "Per-series glossary \"brain\" locking names, honorifics, and recurring phrasing",
+        "Cultural, idiomatic, and dialect-aware localization, not literal translation",
+        "Burned-in subtitle extraction via frame-sampled OCR",
+        "Local speech transcription and speaker diarization, no cloud dependency",
+        "Voice-activity-based retiming so cues never appear before the words",
+        "Automated mechanical audit (timing, line length, reading speed) gating every delivery",
         "Runs entirely on local AI models"
       ],
       "minor": false,
@@ -2058,23 +2061,29 @@
       ],
       "companies": [],
       "problem": [
-        "Translating a song well takes more than swapping words -- meaning, rhythm, and emotional tone all have to survive the move from one language to another.",
-        "Publishing translated music consistently means repeating the same manual steps -- transcription, translation, video assembly, metadata, and scheduling -- for every track."
+        "Translating a song well takes more than swapping words -- meaning, rhythm, and emotional register all have to survive the move from one language to another, and recurring terms need to stay consistent across an entire body of work, not just one track.",
+        "Publishing translated music consistently means repeating the same manual steps -- transcription, translation, subtitle layout, thumbnail design, metadata writing, and scheduling -- for every track, and a mistake in any one of them (a wrong upload, a rights issue) isn't something you can quietly walk back.",
+        "Automating the SEO metadata (titles, descriptions, tags) is tempting, but a fully automated draft can get facts wrong in ways that matter -- publishing without a human check risks putting something inaccurate or tone-deaf into the description of someone else's work."
       ],
       "solution": [
-        "I built a pipeline that takes a raw audio file and produces a finished, translated video ready to publish.",
-        "The audio is transcribed, translated with attention to meaning and rhythm rather than literal word-for-word conversion, then paired with visuals to produce a video file.",
-        "The finished video connects directly to YouTube's API for upload, with title and description metadata, and a content calendar handling scheduling so releases go out on a consistent cadence."
+        "Built on top of a broader subtitle-translation pipeline, this workflow takes a raw audio file and produces a finished, translated video ready to publish -- reusing the same transcription, locked-terminology glossary, and quality-audit tooling rather than duplicating it.",
+        "Multiple on-screen layouts are supported for pairing two languages at once (stacked, split, or vertical text), chosen to match the piece's tone and cadence.",
+        "A local LLM drafts SEO-oriented title, description, and tags directly from the actual translation, but every draft gets checked against the real translation and glossary before it's marked publish-ready -- a first draft got a factual relationship detail wrong in testing, which is exactly the kind of error the review step exists to catch.",
+        "The finished video connects to YouTube's Data API for a resumable, chunked upload with exponential backoff on server errors, a thumbnail generated from the source file's own cover art, and a paced schedule so releases go out on a steady cadence instead of all at once.",
+        "Two independent gates keep anything from publishing by accident: confirmed rights permission per track, and the channel owner's own one-time authentication setup -- both have to be true before a single upload call is allowed to run."
       ],
       "howItWorks": [
-        "**Workflow:** Audio file → transcription → translation (meaning + rhythm aware) → video assembly → YouTube API upload → content-calendar scheduling"
+        "**Workflow:** Audio file → transcription → glossary-aware translation → multi-language subtitle layout → video assembly → LLM-drafted metadata (human-reviewed) → thumbnail generation → rights + auth gate check → resumable YouTube upload → scheduled release"
       ],
       "highlights": [
         "Audio-to-video pipeline, no manual editing per track",
         "Meaning- and rhythm-aware translation, not literal",
-        "Direct YouTube API integration for upload",
-        "Automated title/description metadata",
-        "Content-calendar-driven publishing schedule"
+        "Shared glossary system for consistent terminology across every track",
+        "Multiple on-screen subtitle layouts, including vertical text",
+        "Local LLM-drafted metadata, always human-reviewed before publishing",
+        "Resumable YouTube uploads with exponential backoff",
+        "Dry-run-by-default batch scheduling with per-item rights confirmation",
+        "Two independent safety gates (rights + auth) prevent accidental publishing"
       ],
       "minor": false,
       "featured": false,
