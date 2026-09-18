@@ -478,7 +478,7 @@
       "categories": [
         "Creative Tools",
         "Automation",
-        "macOS"
+        "App Development"
       ],
       "companies": [],
       "problem": [
@@ -511,7 +511,7 @@
         "Project"
       ],
       "categories": [
-        "macOS",
+        "App Development",
         "Automation"
       ],
       "companies": [],
@@ -604,7 +604,7 @@
       ],
       "categories": [
         "Automation",
-        "macOS"
+        "App Development"
       ],
       "companies": [],
       "draft": true,
@@ -925,7 +925,7 @@
         "Project"
       ],
       "categories": [
-        "macOS",
+        "App Development",
         "Automation"
       ],
       "companies": [],
@@ -953,7 +953,7 @@
         "Project"
       ],
       "categories": [
-        "macOS",
+        "App Development",
         "Automation"
       ],
       "companies": [],
@@ -1040,7 +1040,7 @@
         "Project"
       ],
       "categories": [
-        "macOS",
+        "App Development",
         "Automation"
       ],
       "companies": [],
@@ -1072,7 +1072,7 @@
         "Project"
       ],
       "categories": [
-        "macOS",
+        "App Development",
         "Automation"
       ],
       "companies": [],
@@ -1103,7 +1103,7 @@
         "Project"
       ],
       "categories": [
-        "macOS",
+        "App Development",
         "Automation"
       ],
       "companies": [],
@@ -1131,7 +1131,7 @@
         "Project"
       ],
       "categories": [
-        "macOS",
+        "App Development",
         "Automation"
       ],
       "companies": [],
@@ -1160,7 +1160,7 @@
         "Project"
       ],
       "categories": [
-        "macOS",
+        "App Development",
         "Automation"
       ],
       "companies": [],
@@ -1188,7 +1188,7 @@
         "Project"
       ],
       "categories": [
-        "macOS"
+        "App Development"
       ],
       "companies": [],
       "minor": true,
@@ -1216,7 +1216,7 @@
         "Project"
       ],
       "categories": [
-        "macOS",
+        "App Development",
         "Automation"
       ],
       "companies": [],
@@ -1244,7 +1244,7 @@
         "Project"
       ],
       "categories": [
-        "macOS",
+        "App Development",
         "Automation"
       ],
       "companies": [],
@@ -1273,7 +1273,7 @@
         "Project"
       ],
       "categories": [
-        "macOS",
+        "App Development",
         "Obsidian",
         "Automation"
       ],
@@ -2000,6 +2000,225 @@
       "categories": [],
       "companies": [],
       "highlights": []
+    },
+    {
+      "slug": "subtitle-machine",
+      "title": "Smart Subtitle Machine",
+      "tagline": "Subtitling · Local AI · Cultural Localization",
+      "description": "A subtitle translation pipeline that goes beyond literal text, using a per-series glossary and cultural context to keep translations faithful to tone, references, and idiom.",
+      "image": "/images/gradients/gradient-10.svg",
+      "imageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Language",
+        "AI",
+        "Automation"
+      ],
+      "companies": [],
+      "problem": [
+        "Machine-translated subtitles read literally, but literal translation loses idiom, humor, and cultural references specific to the source language and the show itself.",
+        "A translator needs to stay consistent across an entire series -- the same character, joke, or honorific should translate the same way every time it appears."
+      ],
+      "solution": [
+        "I built a subtitle pipeline that pairs local AI translation with a per-series \"glossary brain\" -- a locked reference of names, honorifics, and recurring phrases so translations stay consistent from episode to episode.",
+        "Beyond literal translation, the pipeline considers cultural context: idioms, humor, and references get localized rather than translated word-for-word, so a joke or turn of phrase lands the way it was intended for the target audience.",
+        "It also extracts burned-in subtitles directly from video via OCR when no separate subtitle file exists, and can transcribe dialogue from audio when there's no source text to start from."
+      ],
+      "howItWorks": [
+        "**Workflow:** Source video/audio/subtitles → OCR or transcription (local Whisper) → glossary-aware AI translation → cultural/idiom pass → QC flags → final subtitle file"
+      ],
+      "highlights": [
+        "Per-series glossary \"brain\" for consistent names and phrasing",
+        "Cultural and idiomatic localization, not literal translation",
+        "Burned-in subtitle extraction via OCR",
+        "Local Whisper transcription when no subtitle source exists",
+        "Automated QC flags for review",
+        "Runs entirely on local AI models"
+      ],
+      "minor": false,
+      "featured": false,
+      "draft": false
+    },
+    {
+      "slug": "song-translation-pipeline",
+      "title": "Song Translation & Publishing Pipeline",
+      "tagline": "Audio Translation · Video Production · YouTube Automation",
+      "description": "A pipeline that translates songs from one language to another and turns the result into a published video, from a raw audio file to a scheduled YouTube upload.",
+      "image": "/images/gradients/gradient-11.svg",
+      "imageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Language",
+        "Automation",
+        "Publishing"
+      ],
+      "companies": [],
+      "problem": [
+        "Translating a song well takes more than swapping words -- meaning, rhythm, and emotional tone all have to survive the move from one language to another.",
+        "Publishing translated music consistently means repeating the same manual steps -- transcription, translation, video assembly, metadata, and scheduling -- for every track."
+      ],
+      "solution": [
+        "I built a pipeline that takes a raw audio file and produces a finished, translated video ready to publish.",
+        "The audio is transcribed, translated with attention to meaning and rhythm rather than literal word-for-word conversion, then paired with visuals to produce a video file.",
+        "The finished video connects directly to YouTube's API for upload, with title and description metadata, and a content calendar handling scheduling so releases go out on a consistent cadence."
+      ],
+      "howItWorks": [
+        "**Workflow:** Audio file → transcription → translation (meaning + rhythm aware) → video assembly → YouTube API upload → content-calendar scheduling"
+      ],
+      "highlights": [
+        "Audio-to-video pipeline, no manual editing per track",
+        "Meaning- and rhythm-aware translation, not literal",
+        "Direct YouTube API integration for upload",
+        "Automated title/description metadata",
+        "Content-calendar-driven publishing schedule"
+      ],
+      "minor": false,
+      "featured": false,
+      "draft": false
+    },
+    {
+      "slug": "proxy-iconize",
+      "title": "Proxy Iconize",
+      "tagline": "Obsidian Plugin · Icon Packs · UI Customization",
+      "description": "An Obsidian plugin fork adding custom icon-pack support so files, folders, and menu items can carry their own recognizable icons throughout the vault.",
+      "image": "/images/gradients/gradient-1.svg",
+      "imageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Obsidian",
+        "Automation"
+      ],
+      "companies": [],
+      "problem": [
+        "A large, actively-used vault is easier to navigate by sight than by reading every file name, but Obsidian's default file tree gives every note the same plain icon.",
+        "Existing icon plugins didn't support the specific icon packs and resolution behavior this vault needed."
+      ],
+      "solution": [
+        "I forked and extended an Obsidian icon plugin to support additional icon packs and fix icon-resolution issues that appeared on a cold restart.",
+        "Files, folders, and specific menu items can now be assigned distinct icons, making the vault's structure recognizable at a glance."
+      ],
+      "highlights": [
+        "Custom icon-pack support",
+        "Per-file and per-folder icon assignment",
+        "Fixed icon-resolution-on-cold-restart bug",
+        "Forked and maintained independently"
+      ],
+      "minor": false,
+      "featured": false,
+      "draft": false
+    },
+    {
+      "slug": "proxy-hide",
+      "title": "Proxy Hide",
+      "tagline": "Obsidian Plugin · Menu Cleanup · UI Customization",
+      "description": "An Obsidian plugin that removes duplicate and unwanted entries from context menus, keeping the right-click menu focused on what's actually useful.",
+      "image": "/images/gradients/gradient-2.svg",
+      "imageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Obsidian",
+        "Automation"
+      ],
+      "companies": [],
+      "problem": [
+        "Installing several Obsidian plugins quickly clutters the right-click context menu with duplicate or rarely-used entries.",
+        "There wasn't a clean way to selectively hide specific menu items without disabling the plugins that added them."
+      ],
+      "solution": [
+        "I built a plugin that patches Obsidian's menu system to selectively hide chosen context-menu entries, including duplicates introduced by other plugins.",
+        "Menu-patch ordering was tuned so the hide rules apply consistently regardless of what order plugins load in."
+      ],
+      "highlights": [
+        "Selective context-menu item hiding",
+        "Removes duplicate menu entries from other plugins",
+        "Menu-patch load-order handling",
+        "Lightweight, focused single-purpose plugin"
+      ],
+      "minor": false,
+      "featured": false,
+      "draft": false
+    },
+    {
+      "slug": "childrens-book",
+      "title": "Children's Book",
+      "tagline": "Rhyme Writing · Trilingual Layout · Print Preview",
+      "description": "A writing and layout system for a rhyming children's book, built to compare three languages side by side and preview real printed page spreads before sending anything to press.",
+      "image": "/images/gradients/gradient-3.svg",
+      "imageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Language",
+        "Creative Tools",
+        "Publishing",
+        "Obsidian"
+      ],
+      "companies": [],
+      "problem": [
+        "Writing a rhyming children's book across three languages at once is hard to track by feel alone -- rhyme, rhythm, and meaning all have to line up on every page, in every language.",
+        "Some of the target languages read right-to-left, which flips not just the text but the entire page layout and spread order.",
+        "It's easy to approve a layout on screen that turns out wrong once it's actually printed and bound."
+      ],
+      "solution": [
+        "I built an Obsidian-based writing system with columns for each language, laid out line by line so rhyme, rhythm, and meaning can be compared side by side as the text is written.",
+        "A local preview site renders actual page spreads for each language, including mirrored, right-to-left layouts for languages that need the whole spread flipped.",
+        "This let me proof rhyme and rhythm while writing, and proof the physical print layout before anything went to press."
+      ],
+      "highlights": [
+        "Line-by-line rhyme and rhythm columns in Obsidian",
+        "Three languages compared side by side",
+        "Localhost preview of real page spreads",
+        "Automatic right-to-left mirrored layout for applicable languages",
+        "Print-accurate page preview before production"
+      ],
+      "minor": false,
+      "featured": false,
+      "draft": false
+    },
+    {
+      "slug": "pinnacle-social-analytics",
+      "title": "Pinnacle Social Analytics",
+      "tagline": "Google Workspace · Notion · Automation Pipeline",
+      "description": "An end-to-end pipeline connecting Google Drive, Google Sheets, and Notion with a series of custom apps that bulk-process client media and keep the asset manager and content calendar updated automatically.",
+      "image": "/images/gradients/gradient-4.svg",
+      "imageFit": "cover",
+      "types": [
+        "Project"
+      ],
+      "categories": [
+        "Automation",
+        "Creative Tools"
+      ],
+      "companies": [
+        "Mindful Computing Clients"
+      ],
+      "problem": [
+        "Client media moves through several distinct processing steps before it's ready to publish, and tracking what's been processed, where it lives, and what's scheduled next was manual and easy to lose track of.",
+        "Asset status and the content calendar were tracked separately from the tools doing the actual processing, so they constantly fell out of sync."
+      ],
+      "solution": [
+        "I connected Google Drive, Google Sheets, and Notion with a set of custom-built apps that bulk-process media through each step of the pipeline, from raw upload through to finished, branded output.",
+        "As media moves through the pipeline, the Google Sheets asset manager and the Notion content calendar update automatically, so status always reflects what's actually been processed."
+      ],
+      "highlights": [
+        "Google Drive + Sheets + Notion integration",
+        "Bulk processing through a chain of custom apps",
+        "Automatic asset-manager updates",
+        "Automatic content-calendar updates",
+        "End-to-end tracking from raw media to publish-ready output"
+      ],
+      "minor": false,
+      "featured": false,
+      "draft": false
     }
   ]
 }
