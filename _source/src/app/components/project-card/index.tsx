@@ -84,11 +84,11 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
               <h5 className="text-2xl md:text-3xl font-medium italic leading-snug text-black">
                 &ldquo;{entry.excerpt || excerpt(entry.description)}&rdquo;
               </h5>
-              <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 mt-2">
-                <span className="text-sm text-secondary">
-                  &mdash; <span className="font-semibold text-black">{entry.title}</span>
-                  {entry.tagline && `, ${roleOf(entry.tagline)}`}
-                </span>
+              <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-2 mt-2">
+                <div className="text-sm text-secondary">
+                  <div>&mdash; <span className="font-semibold text-black">{entry.title}</span></div>
+                  {entry.tagline && <div className="pl-4">{roleOf(entry.tagline)}</div>}
+                </div>
                 <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary py-2 px-4 rounded-full border border-primary whitespace-nowrap group-hover:bg-primary group-hover:text-white transition-colors">
                   Read full recommendation
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
