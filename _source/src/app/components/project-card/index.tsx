@@ -86,7 +86,7 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
               </h5>
               <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 mt-2">
                 <span className="text-sm text-secondary">
-                  &mdash; {entry.title}
+                  &mdash; <span className="font-semibold text-black">{entry.title}</span>
                   {entry.tagline && `, ${roleOf(entry.tagline)}`}
                 </span>
                 <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary py-2 px-4 rounded-full border border-primary whitespace-nowrap group-hover:bg-primary group-hover:text-white transition-colors">
