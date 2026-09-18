@@ -71,8 +71,17 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           ))}
         </div>
 
-        <h1 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">{entry.title}</h1>
-        <p className="text-xl text-secondary leading-relaxed mb-10">{entry.description}</p>
+        <h1 className="text-4xl md:text-5xl font-semibold leading-tight mb-3">{entry.title}</h1>
+        {entry.tagline && (
+          <p className="text-base text-secondary mb-6">{entry.tagline}</p>
+        )}
+        {/* Long-form content (e.g. a full testimonial) uses blank-line-
+            separated paragraphs; short descriptions are just one <p>. */}
+        <div className="flex flex-col gap-4 mb-10">
+          {entry.description.split(/\n\n+/).map((para, i) => (
+            <p key={i} className="text-xl text-secondary leading-relaxed">{para}</p>
+          ))}
+        </div>
 
         {/*
           Natural-aspect-ratio container, not a fixed height: a fixed
