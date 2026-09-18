@@ -57,8 +57,8 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
           <img src={img} alt={entry.title} className={`w-full h-full ${imgFit === "contain" ? "object-contain" : "object-cover"}`} />
         </div>
         <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2">
-            <h5 className="text-lg font-semibold truncate">
+          <div className="flex items-start gap-2">
+            <h5 className={`text-lg font-semibold ${isTestimonial ? "line-clamp-2" : "truncate"}`}>
               {isTestimonial ? entry.description : entry.title}
             </h5>
             {entry.badge && (
