@@ -1925,8 +1925,10 @@
       "title": "DJ Yoes",
       "tagline": "Founder of DataMeans · Worked with Hamed on different teams",
       "description": "I had the pleasure of working with Hamed at RealManage during a major software transition, and his clear, timely communications were a major reason it went so smoothly. He developed training materials, managed timelines, gathered feedback, and built our internal communications program from the ground up. By leveraging multiple channels (podcasts, newsletters, email campaigns, comics, and more), he kept our team -- and the wider audience -- up to date without ever resorting to jargon.\n\nHamed's creativity and initiative truly set him apart. He spearheaded internal CiraConnect podcasts, designed engaging visuals to explain new features, and crafted email announcements that people actually read. He partnered seamlessly with leadership, IT, design, and cybersecurity to align messaging with technical goals. Always reliable, detail-oriented, and ready to proofread or brainstorm, Hamed brings a powerful blend of strategic thinking and hands-on execution. Any organization would benefit from his expertise in change management, user engagement, and content strategy.",
-      "image": "/images/gradients/gradient-9.svg",
+      "image": "/images/testimonials/dj-yoes.jpg",
+      "listImage": "/images/testimonials/dj-yoes.jpg",
       "imageFit": "cover",
+      "listImageFit": "cover",
       "types": [
         "Testimonial"
       ],
@@ -1939,8 +1941,10 @@
       "title": "Cheryl Veldman",
       "tagline": "Writer · Worked with Hamed on the same team",
       "description": "I have enjoyed working with Hamed. He joined our team at a critical time as we transitioned from one version of our proprietary software to an updated, but markedly different version. As we phased it in, a lot was going on, creating a material learning curve for our varied audiences. Our team was responsible for testing it, writing training material, responding to questions, and resolving bugs. There was a lot on the plates of a small team. He was responsible for communicating the progress and timelines, providing a forum for the training materials, taking in and responding to feedback, and generally keeping a broad audience up-to-date on the transition -- the actual test of how valuable that was came as we readied to retire the old site. We had a fair amount of anxiety about how the users would react, but it went smoothly. I genuinely believe Hamed's communications were critical in allowing for that success.\n\nHe was inventive in ways that none of us had ever dared to be in prior attempts at communicating about our work to our end users before he joined us: he created a podcast. He was also instrumental in composing a regular comic, so he was constantly working to reach out to all different audience types in whatever way they'd take it. He realized that we are not a \"one-size-fits-all\" audience. Of course, he also excelled at the \"traditional\" communication strategies of email blasts and announcements, making them eye-catching and readable. He created and maintained a support website as well.\n\nI found him supportive and a kind team member who helped proofread and critique the work I was responsible for producing as part of our conversion and ongoing support. He takes the term \"team\" seriously.",
-      "image": "/images/gradients/gradient-10.svg",
+      "image": "/images/testimonials/cheryl-veldman.jpg",
+      "listImage": "/images/testimonials/cheryl-veldman.jpg",
       "imageFit": "cover",
+      "listImageFit": "cover",
       "types": [
         "Testimonial"
       ],
@@ -1955,6 +1959,22 @@
       "description": "Hamed has talent, creativity and consistency. As part of our Business Empowerment and Solutions Team, he filled a vital gap between product development and informing the user base by creating all kinds of communications that went out to thousands of employees across the company. What impresses me most about Hamed is how quickly and accurately he was able to learn the things that he was supposed to communicate about. It took me quite a few years to absorb some of these topics, and he had to learn about them one week and write about them at an expert level the next. I don't know how he did it, but he succeeded wonderfully.\n\nI also liked his initiative. Several times he came up with new ideas for helping us meet our team objectives -- for example, he created a flashcard deck for new terms and acronyms of the industry, and set up an entire website to house his communication library.\n\nI appreciate Hamed as a co-worker and know he will be a great asset in his next position.",
       "image": "/images/gradients/gradient-12.svg",
       "imageFit": "cover",
+      "types": [
+        "Testimonial"
+      ],
+      "categories": [],
+      "companies": [],
+      "highlights": []
+    },
+    {
+      "slug": "testimonial-matin-moghaddas",
+      "title": "Dr. Matin Moghaddas, D.O.",
+      "tagline": "Hospitalist Physician & Family Medicine Residency Faculty · Co-founder, Maaples",
+      "description": "I am pleased to recommend Hamed Nouri for professional opportunities within your organization. I am a Hospitalist Physician and Family Medicine Residency Faculty member with additional experience in clinical research, entrepreneurship, technology commercialization, and university based innovation. I have led NSF funded ventures and collaborated with researchers and startup teams at institutions including Cornell University and New Mexico State University.\n\nI worked closely with Hamed for several years while building Maaples, an AI focused technology venture for education. What impressed me most was his ability to enter unfamiliar areas, learn quickly, and convert that knowledge into useful solutions for the team. A strong example occurred when we entered a business plan competition. Although Hamed had limited prior experience in business development, he independently learned the relevant concepts, helped develop our proposal and commercialization strategy, and contributed to our team receiving a Sandia National Laboratories innovation award and $15,000 prize. That experience reflected a pattern I saw throughout our work together: Hamed is a remarkably fast learner who consistently turns new knowledge into practical improvements that make a real impact on the team.\n\nHe also demonstrated strong instincts for identifying and adopting technologies that improved how our team worked. He used emerging platforms to strengthen project management, communication, knowledge organization, and productivity. That same capability is reflected in his broader work across AI assisted workflows, automation, digital operations, knowledge management, technical communication, and product development. He is comfortable working across disciplines, adapting to changing tools and requirements, and finding ways to make systems and processes more effective.\n\nI recommend Hamed without reservation. I believe he would be especially valuable to organizations seeking someone who can quickly understand a new environment, identify opportunities for improvement, and take ownership of turning ideas into practical results. I would gladly work with him again.",
+      "image": "/images/testimonials/matin-moghaddas.jpg",
+      "listImage": "/images/testimonials/matin-moghaddas.jpg",
+      "imageFit": "cover",
+      "listImageFit": "cover",
       "types": [
         "Testimonial"
       ],

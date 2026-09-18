@@ -30,6 +30,12 @@ export type ProjectEntry = {
 };
 
 function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "list" }) {
+  // Testimonials read better as a pull-quote: the quote itself takes the
+  // large/prominent text slot, with the person's name demoted to the small
+  // attribution slot below it -- the reverse of a project card, where the
+  // title is what matters most.
+  const isTestimonial = entry.types.includes("Testimonial");
+
   if (view === "list") {
     // A testimonial (or any entry) can show a different image in list view
     // than in gallery view -- e.g. a designed quote graphic in the gallery,
@@ -52,14 +58,18 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2">
-            <h5 className="text-lg font-semibold truncate">{entry.title}</h5>
+            <h5 className="text-lg font-semibold truncate">
+              {isTestimonial ? entry.description : entry.title}
+            </h5>
             {entry.badge && (
               <span className="text-xs py-0.5 px-2 rounded-full bg-amber-100 text-amber-800 flex-shrink-0">
                 {entry.badge}
               </span>
             )}
           </div>
-          <p className="text-sm text-secondary truncate">{entry.description || entry.tagline}</p>
+          <p className="text-sm text-secondary truncate">
+            {isTestimonial ? entry.title : entry.description || entry.tagline}
+          </p>
         </div>
         <div className="hidden sm:flex flex-wrap gap-1.5 max-w-xs justify-end">
           {entry.categories.map((c) => (
@@ -105,8 +115,12 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
             </span>
           ))}
         </div>
-        <h5 className="font-semibold leading-snug">{entry.title}</h5>
-        <p className="text-sm text-secondary line-clamp-2">{entry.description}</p>
+        <h5 className="font-semibold leading-snug line-clamp-3">
+          {isTestimonial ? entry.description : entry.title}
+        </h5>
+        <p className="text-sm text-secondary line-clamp-2">
+          {isTestimonial ? entry.title : entry.description}
+        </p>
       </div>
     </div>
   );
