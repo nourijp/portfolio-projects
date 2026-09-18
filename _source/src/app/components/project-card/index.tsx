@@ -44,6 +44,13 @@ function excerpt(text: string, maxLen = 120) {
   return cut.slice(0, lastSpace > 0 ? lastSpace : maxLen).trimEnd();
 }
 
+// A testimonial's tagline is "<role>  ·  <relationship to Hamed>" (e.g.
+// "Senior Vice President, Product at CiraConnect · Managed Hamed directly")
+// -- only the role half belongs in a compact byline.
+function roleOf(tagline: string) {
+  return tagline.split(" · ")[0];
+}
+
 function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "list" }) {
   // Testimonials read better as a pull-quote: the quote itself takes the
   // large/prominent text slot, with the person's name demoted to the small
@@ -78,7 +85,10 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
                 &ldquo;{entry.excerpt || excerpt(entry.description)}&rdquo;
               </h5>
               <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 mt-2">
-                <span className="text-sm text-secondary">&mdash; {entry.title}</span>
+                <span className="text-sm text-secondary">
+                  &mdash; {entry.title}
+                  {entry.tagline && `, ${roleOf(entry.tagline)}`}
+                </span>
                 <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary py-2 px-4 rounded-full border border-primary whitespace-nowrap group-hover:bg-primary group-hover:text-white transition-colors">
                   Read full recommendation
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -130,7 +140,12 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={avatarImg} alt={entry.title} className="w-full h-full object-cover" />
           </div>
-          <span className="text-sm font-semibold">{entry.title}</span>
+          <div className="min-w-0">
+            <span className="block text-sm font-semibold truncate">{entry.title}</span>
+            {entry.tagline && (
+              <span className="block text-xs text-secondary truncate">{roleOf(entry.tagline)}</span>
+            )}
+          </div>
         </div>
         <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary py-2 px-4 rounded-full border border-primary w-fit group-hover:bg-primary group-hover:text-white transition-colors">
           Read Full Recommendation
