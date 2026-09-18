@@ -18,6 +18,10 @@ export type ProjectEntry = {
   types: string[];
   categories: string[];
   companies?: string[];
+  // A hand-picked pull-quote for testimonial cards -- overrides the
+  // auto-truncated opening of `description` when the first ~150 chars
+  // don't make for a compelling excerpt (e.g. a throat-clearing opener).
+  excerpt?: string;
   minor?: boolean;
   featured?: boolean;
   draft?: boolean;
@@ -62,32 +66,40 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
       ? "object-contain bg-black"
       : "object-cover bg-softGray";
     return (
-      <div className="group flex items-center gap-4 py-4 border-b border-softGray hover:bg-softGray/50 transition-colors px-2 -mx-2 rounded-lg">
-        <div className={`relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 ${listFitClass}`}>
+      <div className={`group flex gap-4 py-4 border-b border-softGray hover:bg-softGray/50 transition-colors px-2 -mx-2 rounded-lg ${isTestimonial ? "items-start" : "items-center"}`}>
+        <div className={`relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 ${listFitClass} ${isTestimonial ? "mt-1" : ""}`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={img} alt={entry.title} className={`w-full h-full ${imgFit === "contain" ? "object-contain" : "object-cover"}`} />
         </div>
         <div className="flex-1 min-w-0">
-          <div className="flex items-start gap-2">
-            {isTestimonial ? (
-              <h5 className="text-lg font-medium italic leading-snug text-black">
-                &ldquo;{excerpt(entry.description)}&rdquo;{" "}
-                <span className="not-italic text-sm font-semibold text-primary whitespace-nowrap">
-                  Read full recommendation
-                </span>
+          {isTestimonial ? (
+            <>
+              <h5 className="text-2xl md:text-3xl font-medium italic leading-snug text-black">
+                &ldquo;{entry.excerpt || excerpt(entry.description)}&rdquo;
               </h5>
-            ) : (
-              <h5 className="text-lg font-semibold truncate">{entry.title}</h5>
-            )}
-            {entry.badge && (
-              <span className="text-xs py-0.5 px-2 rounded-full bg-amber-100 text-amber-800 flex-shrink-0">
-                {entry.badge}
-              </span>
-            )}
-          </div>
-          <p className="text-sm text-secondary truncate">
-            {isTestimonial ? entry.title : entry.description || entry.tagline}
-          </p>
+              <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 mt-2">
+                <span className="text-sm text-secondary">&mdash; {entry.title}</span>
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary py-2 px-4 rounded-full border border-primary whitespace-nowrap group-hover:bg-primary group-hover:text-white transition-colors">
+                  Read full recommendation
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 6l6 6-6 6" />
+                  </svg>
+                </span>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="flex items-center gap-2">
+                <h5 className="text-lg font-semibold truncate">{entry.title}</h5>
+                {entry.badge && (
+                  <span className="text-xs py-0.5 px-2 rounded-full bg-amber-100 text-amber-800 flex-shrink-0">
+                    {entry.badge}
+                  </span>
+                )}
+              </div>
+              <p className="text-sm text-secondary truncate">{entry.description || entry.tagline}</p>
+            </>
+          )}
         </div>
         <div className="hidden sm:flex flex-wrap gap-1.5 max-w-xs justify-end">
           {entry.categories.map((c) => (
@@ -110,8 +122,8 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
     const avatarImg = entry.galleryImage || entry.image;
     return (
       <div className="group flex flex-col gap-4 h-full p-6 rounded-xl bg-softGray/60 group-hover:bg-softGray transition-colors">
-        <p className="text-lg font-medium leading-snug line-clamp-6 flex-1">
-          {entry.description}
+        <p className="text-lg font-medium italic leading-snug flex-1">
+          &ldquo;{entry.excerpt || excerpt(entry.description, 170)}&rdquo;
         </p>
         <div className="flex items-center gap-3">
           <div className="relative w-9 h-9 rounded-full overflow-hidden flex-shrink-0 bg-white">
