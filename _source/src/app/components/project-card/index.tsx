@@ -85,6 +85,27 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
     );
   }
 
+  // Testimonials lead with the quote, not a photo -- the image shrinks to
+  // a small byline avatar next to the name instead of a full-width banner,
+  // freeing up the card to give the quote itself the room to breathe.
+  if (isTestimonial) {
+    const avatarImg = entry.galleryImage || entry.image;
+    return (
+      <div className="group flex flex-col gap-4 h-full p-6 rounded-xl bg-softGray/60 group-hover:bg-softGray transition-colors">
+        <p className="text-lg font-medium leading-snug line-clamp-6 flex-1">
+          {entry.description}
+        </p>
+        <div className="flex items-center gap-3">
+          <div className="relative w-9 h-9 rounded-full overflow-hidden flex-shrink-0 bg-white">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={avatarImg} alt={entry.title} className="w-full h-full object-cover" />
+          </div>
+          <span className="text-sm font-semibold">{entry.title}</span>
+        </div>
+      </div>
+    );
+  }
+
   // A gallery-card thumbnail can use a different (e.g. pre-cropped, no
   // letterboxing) image than the full detail-page banner.
   const galleryImg = entry.galleryImage || entry.image;
@@ -115,12 +136,8 @@ function CardInner({ entry, view }: { entry: ProjectEntry; view: "gallery" | "li
             </span>
           ))}
         </div>
-        <h5 className="font-semibold leading-snug line-clamp-3">
-          {isTestimonial ? entry.description : entry.title}
-        </h5>
-        <p className="text-sm text-secondary line-clamp-2">
-          {isTestimonial ? entry.title : entry.description}
-        </p>
+        <h5 className="font-semibold leading-snug line-clamp-3">{entry.title}</h5>
+        <p className="text-sm text-secondary line-clamp-2">{entry.description}</p>
       </div>
     </div>
   );
