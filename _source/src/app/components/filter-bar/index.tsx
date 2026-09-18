@@ -105,17 +105,19 @@ const FilterBar = ({
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center gap-2">
-        <span className="text-sm text-secondary mr-1">Category</span>
-        {allCategories.map((c) => (
-          <Pill
-            key={c}
-            label={c}
-            active={selectedCategories.includes(c)}
-            onClick={() => onToggleCategory(c)}
-          />
-        ))}
-      </div>
+      {allCategories.length > 0 && (
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-sm text-secondary mr-1">Category</span>
+          {allCategories.map((c) => (
+            <Pill
+              key={c}
+              label={c}
+              active={selectedCategories.includes(c)}
+              onClick={() => onToggleCategory(c)}
+            />
+          ))}
+        </div>
+      )}
 
       {allCompanies.length > 1 && (
         <div className="flex flex-wrap items-center gap-2">
