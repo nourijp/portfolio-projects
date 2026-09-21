@@ -26,10 +26,13 @@
       ],
       "solution": [
         "I built a voice layer that accepts natural speech, transcribes it, identifies the user's intent, and converts it into structured Markdown.",
+        "A hotkey starts recording; audio is transcribed locally with MLX Whisper rather than a cloud speech API, so the raw audio never leaves the machine.",
+        "The transcript is passed to an LLM prompted specifically for intent and entity extraction — it classifies the object type (task vs. event vs. project vs. note) and pulls out structured fields (date, time, title) rather than just handing back free text.",
         "The system determines whether the input is a task, event, project, note, or other supported object and applies the appropriate metadata, template, folder, and date information.",
         "The resulting item appears inside the existing Obsidian system without requiring manual organization."
       ],
       "howItWorks": [
+        "**Pipeline:** Hotkey → audio capture → local transcription (MLX Whisper) → LLM intent/entity extraction (object type, date, time, title) → template + folder routing → Markdown file written into the vault.",
         "**Example:** Spoken input — \"Add Toyota interview Tuesday at 9 AM.\" The system identifies the event, extracts the date and time, generates the structured entry, and places it into the appropriate workflow."
       ],
       "highlights": [
@@ -71,8 +74,13 @@
       ],
       "solution": [
         "I built a multilingual collaboration system where English and Japanese users interact with the same underlying content while viewing and editing it in their preferred language.",
+        "Content is stored once, in a language-neutral structured form, rather than as two separate documents — each language is a view generated from that shared source rather than an independent copy.",
+        "An edit in either language triggers AI translation against that shared source, then re-synchronizes the other language's view, instead of a one-time translate-and-forget pass.",
         "Changes are synchronized so the system behaves like one shared workspace rather than two translated documents.",
         "The goal was not simply translation. It was designing collaboration around the reality that participants may not share the same language."
+      ],
+      "howItWorks": [
+        "**Workflow:** Edit in language A → change detected against shared structured source → AI translation into language B → both views re-synchronized from the same underlying content."
       ],
       "highlights": [
         "English ↔ Japanese collaboration",
@@ -150,11 +158,12 @@
       ],
       "solution": [
         "I built a workflow connecting mobile document capture with a local AI processing system and desktop knowledge base.",
+        "Captured images are OCR'd on-device, then the extracted text is passed to a local LLM rather than a cloud API — the model classifies the document type and pulls out structured fields (dates, amounts, deadlines, sender) instead of just returning a text dump.",
         "Documents are processed, classified, and converted into structured information.",
         "The pipeline can identify useful metadata, extract tasks and deadlines, assign tags, and route the resulting Markdown into the appropriate location in the knowledge system."
       ],
       "howItWorks": [
-        "**Workflow:** Capture → OCR / extraction → classification → structured data → tasks / deadlines → Markdown → knowledge base"
+        "**Workflow:** Capture → local OCR → local LLM classification + field extraction → structured data → tasks / deadlines → Markdown → knowledge base. Runs end to end without sending document contents to a cloud service."
       ],
       "highlights": [
         "Mobile document capture",
@@ -380,8 +389,8 @@
     {
       "slug": "ka-blam-formatter",
       "title": "Ka-Blam Formatter",
-      "tagline": "Publishing · Formatting · Automation",
-      "description": "Automates repetitive formatting work for print publishing.",
+      "tagline": "Publishing · AI Upscaling · Automation",
+      "description": "Automates repetitive formatting work for print publishing, including AI-based image upscaling for print resolution.",
       "image": "https://ai.hamednouri.com/images/work/ka-blam-formatter-thumbnail.jpg",
       "imageFit": "cover",
       "types": [
@@ -389,18 +398,22 @@
       ],
       "categories": [
         "Publishing",
+        "AI",
         "Automation"
       ],
       "companies": [],
       "minor": true,
       "solution": [
-        "Print production involves exact formatting requirements and repetitive preparation steps. I built a focused formatting tool to reduce repetitive manual work and make output more consistent."
+        "Print production involves exact formatting requirements and repetitive preparation steps. I built a focused formatting tool to reduce repetitive manual work and make output more consistent.",
+        "Low-resolution source images are upscaled with waifu2x (a neural-network super-resolution model) rather than simple interpolation, keeping line art clean at print resolution, alongside safe cropping, a pricing estimator, and live print-requirement checks."
       ],
       "highlights": [
         "Publishing workflow",
+        "AI upscaling (waifu2x)",
         "Automated formatting",
-        "Print preparation",
-        "Production tooling"
+        "Safe cropping",
+        "Pricing estimator",
+        "Live print-requirement checks"
       ],
       "listImage": "/images/icons/ka-blam-formatter.png",
       "listImageFit": "contain",
@@ -618,20 +631,25 @@
     {
       "slug": "messaging-sticker-conversion",
       "title": "Messaging Sticker Conversion",
-      "tagline": "Asset Extraction Pipeline",
-      "description": "A batch processing pipeline to extract, convert, and package messaging sticker assets across multiple formats and platforms, automating frame extraction, transparency normalization, and export to APNG/WebP formats compatible with LINE, WhatsApp, and Telegram.",
+      "tagline": "Asset Extraction · AI Auto-Tagging · Automation",
+      "description": "A batch processing pipeline to extract, convert, and package messaging sticker assets across multiple formats and platforms, automating frame extraction, transparency normalization, AI-assisted emoji tagging, and export to APNG/WebP formats compatible with LINE, WhatsApp, and Telegram.",
       "image": "https://ai.hamednouri.com/images/work/work-img-5.jpg",
       "types": [
         "Project"
       ],
       "categories": [
+        "AI",
         "Automation",
         "Creative Tools"
       ],
       "companies": [],
       "minor": true,
+      "solution": [
+        "Each sticker is auto-tagged with matching emoji using local vision-language models (Ollama llava and qwen) so packs come out searchable without manually labeling every sticker by hand."
+      ],
       "highlights": [
         "Batch asset extraction",
+        "AI emoji auto-tagging (Ollama llava + qwen)",
         "Multi-format export (APNG, WebP)",
         "Transparency normalization",
         "LINE / WhatsApp / Telegram compatible"
@@ -1884,6 +1902,7 @@
       "types": [
         "Accomplishment"
       ],
+      "draft": true,
       "categories": [],
       "companies": [],
       "highlights": []
@@ -2047,7 +2066,7 @@
     {
       "slug": "song-translation-pipeline",
       "title": "Song Translation & Publishing Pipeline",
-      "tagline": "Audio Translation · Video Production · YouTube Automation",
+      "tagline": "AI Translation · Video Production · YouTube Automation",
       "description": "A pipeline that translates songs from one language to another and turns the result into a published video, from a raw audio file to a scheduled YouTube upload.",
       "image": "/images/gradients/gradient-11.svg",
       "imageFit": "cover",
@@ -2055,6 +2074,7 @@
         "Project"
       ],
       "categories": [
+        "AI",
         "Language",
         "Automation",
         "Publishing"
