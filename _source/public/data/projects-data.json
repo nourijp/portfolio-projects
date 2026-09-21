@@ -53,7 +53,7 @@
       "title": "Multilingual Collaboration System",
       "tagline": "LLMs · Translation · Structured Data · Collaboration",
       "description": "A shared workspace where English and Japanese users can work on the same content in their own languages while changes remain synchronized.",
-      "image": "https://ai.hamednouri.com/images/work/work-img-4.jpg",
+      "image": "https://ai.hamednouri.com/images/work/multilingual-collaboration-thumbnail.jpg",
       "galleryImage": "https://ai.hamednouri.com/images/work/multilingual-collaboration-thumbnail.jpg",
       "galleryImageFit": "cover",
       "types": [
@@ -140,7 +140,7 @@
       "title": "Local-AI Document Pipeline",
       "tagline": "Local LLMs · OCR · Markdown · Automation",
       "description": "A document-processing workflow that turns captured paperwork into organized knowledge, extracting tasks, deadlines, metadata, and useful information automatically.",
-      "image": "https://ai.hamednouri.com/images/work/work-img-1.jpg",
+      "image": "https://ai.hamednouri.com/images/work/local-ai-document-pipeline-thumbnail.jpg",
       "galleryImage": "https://ai.hamednouri.com/images/work/local-ai-document-pipeline-thumbnail.jpg",
       "galleryImageFit": "cover",
       "types": [
@@ -185,7 +185,7 @@
       "title": "Comic-to-Video Production Tool",
       "tagline": "Creative Technology · Timeline UI · Keyframes · Automation",
       "description": "A production interface for turning layered comic artwork into motion content using timeline editing, camera keyframes, and repeatable batch workflows.",
-      "image": "https://ai.hamednouri.com/images/work/work-img-5.jpg",
+      "image": "https://ai.hamednouri.com/images/work/comic-to-video-production-tool-thumbnail.jpg",
       "galleryImage": "https://ai.hamednouri.com/images/work/comic-to-video-production-tool-thumbnail.jpg",
       "galleryImageFit": "cover",
       "types": [
@@ -633,7 +633,8 @@
       "title": "Messaging Sticker Conversion",
       "tagline": "Asset Extraction · AI Auto-Tagging · Automation",
       "description": "A batch processing pipeline to extract, convert, and package messaging sticker assets across multiple formats and platforms, automating frame extraction, transparency normalization, AI-assisted emoji tagging, and export to APNG/WebP formats compatible with LINE, WhatsApp, and Telegram.",
-      "image": "https://ai.hamednouri.com/images/work/work-img-5.jpg",
+      "image": "/images/gradients/gradient-6.svg",
+      "imageFit": "cover",
       "types": [
         "Project"
       ],
