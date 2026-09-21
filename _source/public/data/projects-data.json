@@ -239,7 +239,7 @@
       ],
       "solution": [
         "I'm building a deterministic processing system focused on preserving line art, repeatable color application, and style consistency across panels—supplemented by AI only where it doesn't compromise repeatability.",
-        "The engineering focus is on the pipeline itself: how line art is preserved, how color decisions are made deterministically, and how the same input reliably produces the same output."
+        "The engineering focus is on the pipeline itself: how line art is preserved, how color decisions are made deterministically, and how the same input reliably produces the same output — AI is used narrowly, only in places that don't undermine that repeatability, not for the coloring decisions themselves."
       ],
       "highlights": [
         "Line art preservation",
@@ -920,10 +920,16 @@
       ],
       "companies": [],
       "solution": [
-        "Finding a word takes seconds; creating a useful, well-formatted flashcard takes considerably longer. I built a pipeline that uses LLMs to classify vocabulary and grammar items and generate context-rich flashcard content, then pipes the structured output into Anki decks -- supporting English, Japanese, and Farsi learning tracks."
+        "Finding a word takes seconds; creating a useful, well-formatted flashcard takes considerably longer. I built a pipeline that uses LLMs to classify vocabulary and grammar items and generate context-rich flashcard content, then pipes the structured output into Anki decks -- supporting English, Japanese, and Farsi learning tracks.",
+        "A raw captured word or phrase is sent to an LLM with a prompt that asks for structured output, not prose: part of speech / grammar classification, an example sentence in context, and a natural translation -- returned as fields that map directly onto an Anki note type rather than free text that would need manual reformatting.",
+        "That structured output is rendered into Anki's card template format and written into the deck, so a capture becomes a properly formatted, review-ready card without a manual authoring step in between."
+      ],
+      "howItWorks": [
+        "**Pipeline:** Captured word/phrase → LLM classification + structured field generation (part of speech, example sentence, translation) → Anki note-type template → deck file."
       ],
       "highlights": [
         "LLM-powered content classification",
+        "Structured (not free-text) LLM output mapped to Anki fields",
         "Automated Anki deck generation",
         "Multi-language support (EN/JP/FA)",
         "Spaced repetition optimization",
@@ -1765,12 +1771,18 @@
       ],
       "solution": [
         "I built Caption Pop: drop in a video, and it connects to a local audio-transcription LLM to transcribe it and burn the captions directly onto the video.",
+        "Transcription runs on-device via a local Whisper model, and critically at the word level, not just per-sentence -- each word gets its own timestamp, which is what makes karaoke-style, word-by-word caption pop-in possible instead of a static subtitle line.",
+        "Those word timings feed a native timing editor built for this tool, so if a word lands slightly off, it's a quick manual nudge rather than a re-transcription.",
         "Results are nearly perfect, and where they're not, the tool makes timing and text adjustments easy -- all without a recurring subscription."
       ],
+      "howItWorks": [
+        "**Pipeline:** Video dropped in → audio extracted → local Whisper transcription with word-level timestamps → native timing editor for manual correction → captions burned into the video (TikTok-style karaoke pop-in, driven by those per-word timestamps)."
+      ],
       "highlights": [
-        "Local transcription model",
+        "Local transcription model (word-level timestamps)",
+        "Karaoke-style word-by-word caption timing",
         "Drag-and-drop captioning",
-        "Editable timing & text",
+        "Native timing/text editor",
         "No subscription cost",
         "Near-perfect accuracy"
       ],
